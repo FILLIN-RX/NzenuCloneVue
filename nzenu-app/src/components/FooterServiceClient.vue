@@ -136,12 +136,15 @@
 #sectionRealiser .col-lg-4{
   display: none;
 }
-.supportClientRow2{
+#supportClientRow2{
   display: flex;
   text-align: start;
   justify-content: left;
 }
-.supportClientRow2 img {
+#supportClientRow2 .row p{
+    text-align: start;
+}
+#supportClientRow2 img {
   max-width: 100%;
   height: auto;
 }
@@ -151,6 +154,18 @@
   #firstfootercontainer{
     padding: 1% 5%;
   }
+#supportClientRow2{
+  display: flex;
+  text-align: start;
+  justify-content: left;
+}
+#supportClientRow2 .row p{
+    text-align: start;
+}
+#supportClientRow2 img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 #sectionRealiser .col-lg-4{
