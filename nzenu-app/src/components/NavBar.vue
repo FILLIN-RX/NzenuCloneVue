@@ -90,7 +90,7 @@
                 
                 
                 </li>
-                <li><router-link class="nav-link" to="/contact">Email</router-link></li>
+                <li><router-link class="nav-link" to="/enregistrer">Email</router-link></li>
                 <li><router-link class="nav-link" to="/contact">Certificate SSL</router-link></li>
                 <li><router-link class="nav-link" to="/contact">Blog</router-link></li>
             </ul>
