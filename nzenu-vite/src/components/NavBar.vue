@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-7 col-sm-6 ">
-                <div class="row contact">
+                <div class="row RechercheWhois">
                     <div class="col contact2">
                         <div class="row non">
                             <div class="col-lg-1 col-sm-1 col-md-1"></div>
@@ -67,22 +67,22 @@
                     <div class="link-content">
                         <ul>
                             <li></li>
-                            <li><router-link class="nav-link" to="/domain">Enregistrer un nom de domaine</router-link></li>
-                            <li><router-link class="nav-link" to="/hosting">Transférer un nom de domaine</router-link></li>
-                            <li><router-link class="nav-link" to="/hosting">Recherche Whois</router-link></li>
+                            <li><router-link class="nav-link" to="/">Enregistrer un nom de domaine</router-link></li>
+                            <li><router-link class="nav-link" to="/enregistrer">Transférer un nom de domaine</router-link></li>
+                            <li><router-link class="nav-link" to="/enregistrer">Recherche Whois</router-link></li>
                         </ul>
                     </div>
                 
                 
                 </li>
-                <li><router-link class="nav-link" to="/about">Hebergement</router-link>
+                <li><router-link class="nav-link" to="/RechercheWhois">Hebergement</router-link>
                     <div class="link-content">
                         <ul>
                             <li></li>
-                            <li><router-link class="nav-link" to="/hosting">Hebergement mutualiser</router-link></li>
-                            <li><router-link class="nav-link" to="/hosting">Hebergement Wordpress</router-link></li>
-                            <li><router-link class="nav-link" to="/hosting">Hebergement Prestashop</router-link></li>
-                            <li><router-link class="nav-link" to="/hosting">Migration d'Hebergement</router-link></li>
+                            <li><router-link class="nav-link" to="/enregistrer">Hebergement mutualiser</router-link></li>
+                            <li><router-link class="nav-link" to="/enregistrer">Hebergement Wordpress</router-link></li>
+                            <li><router-link class="nav-link" to="/enregistrer">Hebergement Prestashop</router-link></li>
+                            <li><router-link class="nav-link" to="/enregistrer">Migration d'Hebergement</router-link></li>
                         </ul>
                     </div>
                 
@@ -91,8 +91,8 @@
                 
                 </li>
                 <li><router-link class="nav-link" to="/enregistrer">Email</router-link></li>
-                <li><router-link class="nav-link" to="/contact">Certificate SSL</router-link></li>
-                <li><router-link class="nav-link" to="/contact">Blog</router-link></li>
+                <li><router-link class="nav-link" to="/RechercheWhois">Certificate SSL</router-link></li>
+                <li><router-link class="nav-link" to="/RechercheWhois">Blog</router-link></li>
             </ul>
         </div>
     </nav>
@@ -127,9 +127,9 @@
          /* Added to center items vertically */
     }
     .contact2 a {
-        margin-right: 10px;  /* Added margin to space out contact links */
+        margin-right: 10px;  /* Added margin to space out RechercheWhois links */
     }
-    .contact{
+    .RechercheWhois{
         display: flex;
         align-items: center; 
         flex-direction: column; /* Added to center items vertically */
@@ -142,6 +142,10 @@
         display: flex;
         justify-content: space-around; /* Added to center items horizontally */
         list-style-type: none;
+        
+        position: relative;
+
+
     }
     .bg-light li{  /* Added styles for list items in bg-light */
         margin: 0 ; /* Added margin for spacing */
@@ -156,6 +160,17 @@
         display: none;
         flex-direction: column;
         text-align: left; /* Align text to the left */
+    }
+    .link-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    }
+
+    li:hover .link-content {
+         display: block;
     }
 /* pas de style pour le moment */
 /* ton style perso si besoin */

@@ -1,26 +1,14 @@
-
-
 <template>
-  <div class="research">
-    <h1>{{ rechercher }}</h1>
-    <div class="coll">
+    <div class="research" :style="{ background: backgroundColor }">
+      <h1>{{ rechercher }}</h1>
+      <div class="coll">
         <button>WWW</button>
         <input type="text" placeholder="Search..." v-model="searchQuery" />
         <button @click="search">Search</button>
+      </div>
     </div>
-    
-  </div>
-
-
-
-
-
-
-
-
-
-
-</template>
+  </template>
+  
 
 
 <script>
@@ -30,7 +18,10 @@
             rechercher: {
                 type: String,
                 default: 'Recherche de domaine'
-            }
+            },
+            backgroundColor: {
+                type: String,
+                default: 'oklch(0.359 0.144 278.697)'
         },
         data() {
             return {
@@ -44,7 +35,7 @@
             }
         }
     }
-
+}
 
 </script>
 
@@ -52,7 +43,6 @@
 <style>
 
 .research{
-    background:oklch(0.359 0.144 278.697);
     color: white;
     height: 9rem;
     display: flex;
@@ -62,15 +52,17 @@
     & button{
         background-color: aqua;
         margin: 0;
-        border: 1px solid aqua;
+        border: 2px solid aqua;
         font-weight: 500;
         height: 30px;
         width: 20%;
+        
     }
     & input{
-        padding: 3px;
+        padding: 2px;
         border: none;
         width: 30%;
+        border: 1px solid rgba(206, 201, 201, 0.596);
 
     }
 

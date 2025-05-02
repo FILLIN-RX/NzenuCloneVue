@@ -3,12 +3,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HomePage from '@/pages/HomePage.vue'
-import AboutPage from '@/pages/AboutPage.vue'
+
 import EnregistrerPage from '@/pages/EnregistrerPage.vue'
+import RechercheWhois from '@/pages/RechercheWhois.vue'
 
 const routes = [
   { path: '/', component: HomePage },
-  { path: '/about', component: AboutPage },
+  { path: '/RechercheWhois', component: RechercheWhois },
   { path: '/enregistrer', component: EnregistrerPage }
 ]
 
