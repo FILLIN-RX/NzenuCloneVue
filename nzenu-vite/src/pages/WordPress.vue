@@ -3,39 +3,44 @@
 
 <template>
     <EntetePages  :titre="titre" :donnee="donnee" :photo="photo"/>
+
+
+
+    <h4 class="optionInclusMain">Pourquoi choisir WordPress?</h4> 
+                <p>Que vous souhaitiez créer un blog, un site institutionnel, un portfolio numérique avec le CMS WordPress, vous êtes entre de bonnes mains.</p>
+                    <span>Voici 4 bonnes raisons de vous lancer dans l’aventure</span>
    
-   
-   <div class="row align-items-center justify-content-center">
-    <div class="col-lg-5 col-md-12 col-sm-12">
+   <div class="row align-items-center justify-content-center p-3 text-start">
+    <div class="col-lg-5 col-md-12 col-sm-12 m-3 ">
         <CardOption
-            title="Hébergement WordPress"
-            content="Profitez d'un hébergement optimisé pour WordPress, avec des performances exceptionnelles et une sécurité renforcée."
-            image="<i class='bi bi-check2-all'></i>"
+            
+            title="Simple d’utilisation"
+            content="Grâce à son interface intuitive, vous pourrez, sans aucune connaissance technique, modifier le contenu de votre site internet.Vous aurez également la possibilité de faire évoluer l’organisation des pages, la place des textes ou des images, etc."
+            :icon="'<svg data-v-c3ad5561 xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; role=&quot;img&quot; class=&quot;icon text-primary-900 w-5 h-5&quot; width=&quot;1em&quot; height=&quot;1em&quot; viewBox=&quot;0 0 24 24&quot;><path fill=&quot;currentColor&quot; d=&quot;m12.7 14.05l5.65-5.65l-1.4-1.45l-4.25 4.25l-2.15-2.1l-1.4 1.4zM6 18V2h16v16zm2-2h12V4H8zm-6 6V6h2v14h14v2zM8 4v12z&quot;></path></svg>'"  
         />
     </div>
-    <div class="col-lg-5 col-md-12 col-sm-12">
+    <div class="col-lg-5 col-md-12 col-sm-12 m-3">
         <CardOption
-        title="Tableau de Bord intuitif"
-        content="Découvrez la simplicité de notre tableau de bord convivial qui vous permet de gérer facilement tous vos noms de domaine en un seul endroit. Gagnez du temps et prenez le contrôle total de vos configurations en quelques clics."
-        :icon="'<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; role=&quot;img&quot; class=&quot;icon&quot; width=&quot;1em&quot; height=&quot;1em&quot; viewBox=&quot;0 0 24 24&quot;><path fill=&quot;currentColor&quot; d=&quot;M15 21q-.825 0-1.412-.587T13 19v-4q0-.825.588-1.412T15 13h4q.825 0 1.413.588T21 15v4q0 .825-.587 1.413T19 21zm0-10q-.825 0-1.412-.587T13 9V5q0-.825.588-1.412T15 3h4q.825 0 1.413.588T21 5v4q0 .825-.587 1.413T19 11zM5 11q-.825 0-1.412-.587T3 9V5q0-.825.588-1.412T5 3h4q.825 0 1.413.588T11 5v4q0 .825-.587 1.413T9 11zm0 10q-.825 0-1.412-.587T3 19v-4q0-.825.588-1.412T5 13h4q.825 0 1.413.588T11 15v4q0 .825-.587 1.413T9 21z&quot;></path></svg>'"
-      />
+        title="Personnalisation"
+        content="La force de WordPress réside également dans sa bibliothèque de thèmes. Un thème WordPress est un « style » de site que vous pouvez acquérir. Baladez-vous parmi ces différents thèmes pour trouver celui qui correspondra le mieux à vos objectifs. Vous y trouverez des modèles de sites graphiques, de portfolios ou encore de blogs WordPress."
+        :icon="'<svg data-v-c3ad5561 xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; role=&quot;img&quot; class=&quot;icon text-primary-900 w-5 h-5&quot; width=&quot;1em&quot; height=&quot;1em&quot; viewBox=&quot;0 0 24 24&quot;><path fill=&quot;currentColor&quot; d=&quot;m12.7 14.05l5.65-5.65l-1.4-1.45l-4.25 4.25l-2.15-2.1l-1.4 1.4zM6 18V2h16v16zm2-2h12V4H8zm-6 6V6h2v14h14v2zM8 4v12z&quot;></path></svg>'"  
+        />
 
     </div>
-    <div class="col-lg-5 col-md-12 col-sm-12">
+    <div class="col-lg-5 col-md-12 col-sm-12 m-3">
         <CardOption
-        title="Tableau de Bord intuitif"
-        content="Découvrez la simplicité de notre tableau de bord convivial qui vous permet de gérer facilement tous vos noms de domaine en un seul endroit. Gagnez du temps et prenez le contrôle total de vos configurations en quelques clics."
-        :icon="'<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; role=&quot;img&quot; class=&quot;icon&quot; width=&quot;1em&quot; height=&quot;1em&quot; viewBox=&quot;0 0 24 24&quot;><path fill=&quot;currentColor&quot; d=&quot;M15 21q-.825 0-1.412-.587T13 19v-4q0-.825.588-1.412T15 13h4q.825 0 1.413.588T21 15v4q0 .825-.587 1.413T19 21zm0-10q-.825 0-1.412-.587T13 9V5q0-.825.588-1.412T15 3h4q.825 0 1.413.588T21 5v4q0 .825-.587 1.413T19 11zM5 11q-.825 0-1.412-.587T3 9V5q0-.825.588-1.412T5 3h4q.825 0 1.413.588T11 5v4q0 .825-.587 1.413T9 11zm0 10q-.825 0-1.412-.587T3 19v-4q0-.825.588-1.412T5 13h4q.825 0 1.413.588T11 15v4q0 .825-.587 1.413T9 21z&quot;></path></svg>'"
-      />
+        title="Evolution"
+        content="Vos besoins peuvent évoluer et WordPress l’a bien compris. Grâce à de nombreux plugins, développez votre activité au fur et à mesure. Envie de conquérir le marché international ? Pourquoi ne pas installer un plugin de traduction pour développer votre site en anglais ?"
+        :icon="'<svg data-v-c3ad5561 xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; role=&quot;img&quot; class=&quot;icon text-primary-900 w-5 h-5&quot; width=&quot;1em&quot; height=&quot;1em&quot; viewBox=&quot;0 0 24 24&quot;><path fill=&quot;currentColor&quot; d=&quot;m12.7 14.05l5.65-5.65l-1.4-1.45l-4.25 4.25l-2.15-2.1l-1.4 1.4zM6 18V2h16v16zm2-2h12V4H8zm-6 6V6h2v14h14v2zM8 4v12z&quot;></path></svg>'"  
+        />
 
     </div>
-    <div class="col-lg-5 col-md-12 col-sm-12">
+    <div class="col-lg-5 col-md-12 col-sm-12 m-3">
         <CardOption
-        title="Tableau de Bord intuitif"
-        content="Découvrez la simplicité de notre tableau de bord convivial qui vous permet de gérer facilement tous vos noms de domaine en un seul endroit. Gagnez du temps et prenez le contrôle total de vos configurations en quelques clics."
-        :icon="'<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; role=&quot;img&quot; class=&quot;icon&quot; width=&quot;1em&quot; height=&quot;1em&quot; viewBox=&quot;0 0 24 24&quot;><path fill=&quot;currentColor&quot; d=&quot;M15 21q-.825 0-1.412-.587T13 19v-4q0-.825.588-1.412T15 13h4q.825 0 1.413.588T21 15v4q0 .825-.587 1.413T19 21zm0-10q-.825 0-1.412-.587T13 9V5q0-.825.588-1.412T15 3h4q.825 0 1.413.588T21 5v4q0 .825-.587 1.413T19 11zM5 11q-.825 0-1.412-.587T3 9V5q0-.825.588-1.412T5 3h4q.825 0 1.413.588T11 5v4q0 .825-.587 1.413T9 11zm0 10q-.825 0-1.412-.587T3 19v-4q0-.825.588-1.412T5 13h4q.825 0 1.413.588T11 15v4q0 .825-.587 1.413T9 21z&quot;></path></svg>'"
-      />
-
+        title="Optimisation"
+        content="Avec WordPress, votre contenu est mis en valeur et cela se ressent sur votre référencement. Plus besoin de vous soucier de l’aspect responsive, tous les sites WordPress s’adaptent aux mobiles, tablettes, etc. Besoin d’être guidé dans l’optimisation de vos contenus ? Pensez aux plugins SEO pour ajouter des fonctionnalités à votre thème WordPress !"
+        :icon="'<svg data-v-c3ad5561 xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; role=&quot;img&quot; class=&quot;icon text-primary-900 w-5 h-5&quot; width=&quot;1em&quot; height=&quot;1em&quot; viewBox=&quot;0 0 24 24&quot;><path fill=&quot;currentColor&quot; d=&quot;m12.7 14.05l5.65-5.65l-1.4-1.45l-4.25 4.25l-2.15-2.1l-1.4 1.4zM6 18V2h16v16zm2-2h12V4H8zm-6 6V6h2v14h14v2zM8 4v12z&quot;></path></svg>'"  
+        />
     </div>
    </div>
 </template>
@@ -51,3 +56,12 @@
    const donnee = "Notre offre d'hébergement WordPress est conçue pour répondre aux besoins des sites web exigeants en termes de performance, de sécurité et de convivialité. Découvrez comment notre plateforme optimisée peut transformer votre expérience WordPress.";
    import photo from '@/assets/image (9).jpeg';
 </script>
+
+<style>
+
+    CardOption {
+        min-height: 5rem;
+        padding: 1rem; /* Adding padding for better spacing */
+    }
+
+</style>
