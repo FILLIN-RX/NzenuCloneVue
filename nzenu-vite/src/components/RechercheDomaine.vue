@@ -1,6 +1,6 @@
 <template>
     <div class="research" :style="{ background: backgroundColor }">
-      <h1>{{ rechercher }}</h1>
+      <h1 :style="{color:color}">{{ rechercher }}</h1>
       <div class="coll">
         <button>WWW</button>
         <input type="text" placeholder="Search..." v-model="searchQuery" />
@@ -22,6 +22,11 @@
             backgroundColor: {
                 type: String,
                 default: 'oklch(0.359 0.144 278.697)'
+            },
+            color: {
+                type: String,
+                default: 'white'
+            },
         },
         data() {
             return {
@@ -35,7 +40,7 @@
             }
         }
     }
-}
+
 
 </script>
 

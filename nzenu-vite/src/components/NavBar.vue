@@ -67,9 +67,9 @@
                     <div class="link-content">
                         <ul>
                             <li></li>
-                            <li><router-link class="nav-link" to="/">Enregistrer un nom de domaine</router-link></li>
-                            <li><router-link class="nav-link" to="/enregistrer">Transférer un nom de domaine</router-link></li>
-                            <li><router-link class="nav-link" to="/enregistrer">Recherche Whois</router-link></li>
+                            <li><router-link class="nav-link" to="/enregistrer">Enregistrer un nom de domaine</router-link></li>
+                            <li><router-link class="nav-link" to="/transferrer">Transférer un nom de domaine</router-link></li>
+                            <li><router-link class="nav-link" to="/RechercheWhois">Recherche Whois</router-link></li>
                         </ul>
                     </div>
                 
@@ -79,8 +79,8 @@
                     <div class="link-content">
                         <ul>
                             <li></li>
-                            <li><router-link class="nav-link" to="/enregistrer">Hebergement mutualiser</router-link></li>
-                            <li><router-link class="nav-link" to="/enregistrer">Hebergement Wordpress</router-link></li>
+                            <li><router-link class="nav-link" to="/mutualiser">Hebergement mutualiser</router-link></li>
+                            <li><router-link class="nav-link" to="/wordpress">Hebergement Wordpress</router-link></li>
                             <li><router-link class="nav-link" to="/enregistrer">Hebergement Prestashop</router-link></li>
                             <li><router-link class="nav-link" to="/enregistrer">Migration d'Hebergement</router-link></li>
                         </ul>
@@ -157,16 +157,20 @@
         border: 1px solid #ccc; /* Border for dropdown */
         padding: 10px; /* Padding for dropdown */
         display: flex;
-        display: none;
+    
         flex-direction: column;
         text-align: left; /* Align text to the left */
     }
     .link-content {
-    display: none;
+    
     position: absolute;
     background-color: white;
     border: 1px solid #ccc;
     z-index: 10;
+    }
+
+    .nav-link:hover .link-content {
+        display: block;
     }
 
     li:hover .link-content {

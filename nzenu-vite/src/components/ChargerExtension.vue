@@ -25,9 +25,9 @@
         <table v-if="domains.length">
           <thead>
             <tr>
-              <th>Domaine</th>
-              <th>Prix Actuel</th>
-              <th>Prix Ancien</th>
+              <th></th>
+              <th></th>
+              <th></th>
             </tr>
           </thead>
           <tbody>

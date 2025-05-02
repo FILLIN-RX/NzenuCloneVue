@@ -56,7 +56,7 @@
     </div>
   </div>
 </section>
-<ChargerForfait/>
+<ChargerForfait />
 
       
   </template>

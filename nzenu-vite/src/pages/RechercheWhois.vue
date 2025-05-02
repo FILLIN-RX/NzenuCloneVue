@@ -1,9 +1,11 @@
 <template>
   <EntetePages :titre="titre" :donnee="donnee" :photo="photo"/>
+   <RechercheDomaine backgroundColor="#E6FAFC" rechercher="" />
 </template>
 
 <script setup>
   import EntetePages from '@/components/EntetePages.vue';
+  import RechercheDomaine from '@/components/RechercheDomaine.vue';
   
   // Correct way to import an image in Vue
   import photo from '@/assets/image (15).jpeg';
