@@ -4,9 +4,8 @@
 <template>
     <EntetePages  :titre="titre" :donnee="donnee" :photo="photo"/>
 
-
-
-    <h4 class="optionInclusMain">Pourquoi choisir WordPress?</h4> 
+    <section>
+        <h4 class="optionInclusMain">Pourquoi choisir WordPress?</h4> 
                 <p>Que vous souhaitiez créer un blog, un site institutionnel, un portfolio numérique avec le CMS WordPress, vous êtes entre de bonnes mains.</p>
                     <span>Voici 4 bonnes raisons de vous lancer dans l’aventure</span>
    
@@ -43,6 +42,9 @@
         />
     </div>
    </div>
+    </section>
+
+    
 </template>
 
 
@@ -62,6 +64,10 @@
     CardOption {
         min-height: 5rem;
         padding: 1rem; /* Adding padding for better spacing */
+    }
+
+    section{
+        background-color: #d1d5db;
     }
 
 </style>

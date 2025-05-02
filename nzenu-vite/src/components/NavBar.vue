@@ -1,6 +1,6 @@
 <template>
     <nav class="w-100 p-0 ">
-        <div class="row bg-primary">
+        <div class="row">
             <div class="col-lg-2 col-md-5 col-sm-2">
                 <div class="row">
                     <div class="col-lg-4 col-md-2 col-sm-2">
@@ -81,8 +81,8 @@
                             <li></li>
                             <li><router-link class="nav-link" to="/mutualiser">Hebergement mutualiser</router-link></li>
                             <li><router-link class="nav-link" to="/wordpress">Hebergement Wordpress</router-link></li>
-                            <li><router-link class="nav-link" to="/enregistrer">Hebergement Prestashop</router-link></li>
-                            <li><router-link class="nav-link" to="/enregistrer">Migration d'Hebergement</router-link></li>
+                            <li><router-link class="nav-link" to="/prestashop">Hebergement Prestashop</router-link></li>
+                            <li><router-link class="nav-link" to="/migration">Migration d'Hebergement</router-link></li>
                         </ul>
                     </div>
                 
@@ -105,6 +105,9 @@
 <style scoped>
     template{
         color: black;
+    }
+    nav{
+        background-color: #1045A5;
     }
     a{
         color: black;

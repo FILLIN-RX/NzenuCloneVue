@@ -23,11 +23,11 @@ defineProps({
 
 <style scoped>
 .card-option {
-  background-color: #D1D5DB;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  min-height: 100%; /* Updated to min-height */
+  height: 15rem /* Updated to min-height */
 }
 .icon {
   margin-bottom: 10px;

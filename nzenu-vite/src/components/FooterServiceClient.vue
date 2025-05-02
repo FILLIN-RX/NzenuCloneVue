@@ -134,7 +134,7 @@
   
 }
 .supportClient {
-  background-color: #060642;
+  background-color: #172554;
   color: #fff;
 }
 
@@ -151,7 +151,7 @@
 
 #firstfootercontainer{
     text-align: left;
-    background-color: rgb(38, 72, 124);
+    background-color: #1045A5;
     color: white;
 
     & a{
