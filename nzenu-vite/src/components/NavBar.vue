@@ -90,9 +90,9 @@
                 
                 
                 </li>
-                <li><router-link class="nav-link" to="/enregistrer">Email</router-link></li>
-                <li><router-link class="nav-link" to="/RechercheWhois">Certificate SSL</router-link></li>
-                <li><router-link class="nav-link" to="/RechercheWhois">Blog</router-link></li>
+                <li><router-link class="nav-link" to="/email">Email</router-link></li>
+                <li><router-link class="nav-link" to="/certificat-ssk">Certificate SSL</router-link></li>
+                <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
             </ul>
         </div>
     </nav>

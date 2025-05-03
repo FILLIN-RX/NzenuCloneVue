@@ -10,6 +10,8 @@ import RechercheWhois from '@/pages/RechercheWhois.vue'
 import WordPress from '../pages/WordPress.vue'
 import PresTashop from '../pages/PresTashop.vue'
 import MigraTion from '../pages/MigraTion.vue'
+import EmailVue from '../pages/EmailVue.vue'
+import CertificatSsk from '../pages/CertificatSsk.vue'
 
 const routes = [
   { path: '/', component: HomePage },
@@ -20,6 +22,10 @@ const routes = [
   { path: '/wordpress', component: WordPress },
   { path: '/prestashop', component: PresTashop },
   { path: '/migration', component: MigraTion },
+  { path: '/email', component: EmailVue },
+  { path: '/certificat-ssk', component: CertificatSsk },
+  
+  
 
 ]
 
