@@ -1,13 +1,15 @@
 <template>
   <NavBar/>
   <RouterView/>
+  <WhatzappButton />
   <FooTer />
 </template>
 
 <script>
 
 import NavBar from './components/NavBar.vue'
-import FooTer from './components/FooterServiceClient.vue';
+import FooTer from './components/FooterServiceClient.vue'
+import WhatzappButton from './components/WhatzappButton.vue'
 
 export default {
   name: 'App',
@@ -15,6 +17,7 @@ export default {
     
     NavBar,
     FooTer,
+    WhatzappButton,
   }
 }
 </script>
