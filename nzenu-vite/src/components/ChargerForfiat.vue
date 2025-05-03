@@ -15,7 +15,7 @@
   const forfaits = ref([])
   
   onMounted(async () => {
-    const response = await fetch('forfaitPrix.json')
+    const response = await fetch('/forfaitPrix.json')
     forfaits.value = await response.json()
   })
   </script>

@@ -29,10 +29,12 @@
   })
   
   const isExpanded = ref(false)
-  
   const displayedAttributes = computed(() => {
-    return isExpanded.value ? forfait.atribute : forfait.atribute.slice(0, 12)
-  })
+  if (!forfait || !forfait.atribute) return []
+  return expand.value ? forfait.atribute : forfait.atribute.slice(0, 12)
+})
+
+  
   
   function handleMouseLeave() {
     setTimeout(() => {
