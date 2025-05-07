@@ -98,7 +98,9 @@
   text-align: center;
   padding:2% 0;
 }
-
+.optionInclus{
+  background-color: white;
+}
 .optionInclus .row {
   display: flex;
   justify-content: center;

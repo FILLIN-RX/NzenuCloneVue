@@ -1,5 +1,5 @@
 <template>
-    <EntetePages  :titre="titre" :donnee="donnee" :photo="photo"/>
+    <EntetePages  :titre="titre" :donnee="donnee" :photo="photo" backgroundColor="black"/>
 
     <section>
         <h4 class="optionInclusMain">Pourquoi choisir notre hebergement Prestashop?</h4> 

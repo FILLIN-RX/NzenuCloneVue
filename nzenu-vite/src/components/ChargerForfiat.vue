@@ -5,6 +5,7 @@
         :key="index"
         :forfait="forfait"
       />
+      <p>* Seuleument les noms de domaine (.com , .cm) sont inclus</p>
     </div>
   </template>
   
@@ -23,6 +24,19 @@
   <style scoped>
   #forfait {
     background-color: #d1d5db;
+    & p{
+      text-align: start;
+    }
   }
+
+
+
+
+  @media (min-width:999px) {
+  #forfait{
+    padding: 1% 10%;
+  }
+  
+}
   </style>
   

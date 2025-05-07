@@ -10,18 +10,21 @@
             numérique forte dès aujourd'hui.
           </p>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
+        <div class="row sech">
+          <div class="col-lg-6 col-sm-12">
             <input type="search" v-model="searchQuery" placeholder="Rechercher un domaine" />
             <input id="buttonRecherche" type="button" value="Search" @click="searchDomain" />
           </div>
-          <div class="col-lg-4 col-sm-12">
+          <div class="col-lg-6 col-sm-12  mmm">
             <button id="buttonactualiser" @click="refresh">Actualiser</button>
           </div>
         </div>
       </div>
   
-      <div class="row justify-content-center" id="domaine">
+      <div class="row justify-content-center domaine">
+        <div class="col-12">
+
+        
         <table v-if="domains.length">
           <thead>
             <tr>
@@ -39,6 +42,7 @@
           </tbody>
         </table>
       </div>
+    </div>
   
       <div id="buttonExtensionContainer">
         <button id="buttonExtension" @click="loadMoreExtensions">Charger plus d'extensions</button>
@@ -93,8 +97,46 @@
   <style scoped>
   /* Add your styles for table, buttons, etc. */
   .old-price {
-    text-decoration: line-through;
+    text-decoration: line-through red;
     color: grey;
   }
+  .col-sm-12{
+    text-align: start;
+  }
+  .col-md-12{
+    text-align: center;
+  }
+  #domain{
+    background-color: white;
+  }
+  .mmm{
+    text-align: end;
+  }
+  #domainetable{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .sech{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+  table{
+    width: 100%;
+  }
+  tr:nth-child(odd) {
+  background-color:#d1d5db;
+  width: 100%;
+}
+@media (min-width:999px) {
+  
+  #domain{
+    padding: 0 10%;
+  }
+  
+}
+
   </style>
   

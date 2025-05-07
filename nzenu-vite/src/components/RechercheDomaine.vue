@@ -60,17 +60,23 @@
         border: 2px solid aqua;
         font-weight: 500;
         height: 30px;
-        width: 20%;
+        width: 30%;
         
     }
     & input{
         padding: 2px;
         border: none;
-        width: 30%;
+        width: 40%;
         border: 1px solid rgba(206, 201, 201, 0.596);
 
     }
 
+}
+@media (min-width:999px) {
+  .research{
+    padding: 1% 10%;
+  }
+  
 }
 
 

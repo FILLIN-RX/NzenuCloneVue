@@ -1,6 +1,6 @@
 <template>
     
-    <EntetePages  :titre="titre" :donnee="donnee" :photo="photo"/>
+    <EntetePages  :titre="titre" :donnee="donnee" :photo="photo" backgroundColor="black"/>
     <RechercheDomaine backgroundColor="white" rechercher="Transferrer un nom de domaine" color="black" />
     
     

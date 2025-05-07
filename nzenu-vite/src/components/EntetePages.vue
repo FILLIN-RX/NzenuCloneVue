@@ -1,7 +1,7 @@
 
 <template>
-    <section id="sectionRealiser">
-            <div class="col-lg-6 col-md-12">
+    <section id="sectionRealiser" :style="{background: backgroundColor}">
+            <div class="col-lg-7 col-md-12">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>{{ titre }}</h1>
@@ -39,7 +39,7 @@
                 </div>
                 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-5">
 
 
                 <img :src="photo" alt="">
@@ -51,10 +51,20 @@
 <script>
     export default{
         props:{
-            titre:String,
-            donnee:String,
-            photo:String
-        }
+            titre: {
+                String
+            },
+            donnee:{
+                String
+            },
+            photo:{
+                String
+            },
+            backgroundColor:{
+                type: String,
+                default:'#0b1120'
+            }
+    }
     }
 
 
@@ -82,7 +92,13 @@
   color: white;
   text-align: left;
 }
-
+@media (min-width:999px) {
+  
+  #sectionRealiser{
+    padding: 0 10%;
+  }
+  
+}
 
 
 </style>

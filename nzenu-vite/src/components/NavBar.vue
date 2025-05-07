@@ -1,7 +1,7 @@
 <template>
-    <nav class="w-100 p-0 ">
+    <nav class="w-100  ">
         <div class="row">
-            <div class="col-lg-2 col-md-5 col-sm-2">
+            <div class="col-lg-4 col-md-5 col-sm-2">
                 <div class="row">
                     <div class="col-lg-4 col-md-2 col-sm-2">
                         <router-link class="nav-link" to="/">
@@ -23,25 +23,25 @@
             <div class="col-lg-6 col-md-7 col-sm-6 ">
                 <div class="row RechercheWhois">
                     <div class="col contact2">
-                        <div class="row non">
-                            <div class="col-lg-1 col-sm-1 col-md-1"></div>
-                            <div class="col"><a href="">657 882 614</a></div>
+                        <div class="row">
+                            <div class="col-1"><img src="../assets/9b15aa35-ae1e-4ac0-a2bd-c6db8224f258.svg" alt=""></div>
+                            <div class="col-9"><a href="">657 882 614</a></div>
                         </div>
-                        <div class="row non">
-                            <div class="col-sm-1" style="display: flex; justify-content: center; align-items: center;">|</div>
-                            <div class="col">
+                        <div class="row">
+                            <div class="col-1">|</div>
+                            <div class="col-9">
                                 <a href="">671 087 727</a>
                             </div>
                         </div>
-                        <div class="row non">
-                            <div class="col"></div>
-                            <div class="col">
+                        <div class="row">
+                            <div class="col-1"><img src="../assets/364b0b55-515d-4284-92b5-09681c8539ce.svg" alt=""></div>
+                            <div class="col-9">
                                 <a href="">support</a>
                             </div>
                         </div>
-                        <div class="row non">
-                            <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                            <div class="col"><a href="">
+                        <div class="row">
+                            <div class="col-1"><img src="../assets/6cce5943-9d6d-48e0-ba6b-74daddf11190.svg" alt=""></div>
+                            <div class="col-9"><a href="">
                                 Espace client
                             </a></div>
                         </div>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row non">
+                <div class="row">
                     <div class="col">
                         <p>Plus de 280 000 sites hébergés</p>
                     </div>
@@ -61,7 +61,7 @@
             </div>
         </div>
         
-        <div class="row bg-light non">
+        <div class="row bg-light">
             <ul>
                 <li><router-link class="nav-link" to="/">Nom de domaine</router-link>
                     <div class="link-content">
@@ -179,6 +179,9 @@
     li:hover .link-content {
          display: block;
     }
+    .contact2 img{
+        width: 20px;
+    }
 /* pas de style pour le moment */
 /* ton style perso si besoin */
     @media (max-width: 576px) {
@@ -190,9 +193,15 @@
             display: none;
         }
     }
-    @media (min-width:999px) and (max-width: 1200px) {
+
+    @media (min-width:999px) {
+  
+  .row{
+    padding: 0 10%;
+  }
+  
+}
         
-        
-    }
+    
 </style>
   

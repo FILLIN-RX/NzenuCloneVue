@@ -1,7 +1,7 @@
 
 
 <template>
-  <div class="card-option">
+  <div class="card-option :width" :style="{background:backgroundColor}">
     <div class="row">
       <div class="col-1 icon " v-html="icon"></div> <!-- Injection du SVG -->
       <div class="col title">{{ title }}</div>
@@ -17,17 +17,19 @@
 defineProps({
   icon: String,   // On passera le SVG sous forme de string
   title: String,
-  content: String
+  content: String,
+  backgroundColor: {
+                type: String,
+                default: '#D1D5DB'
+            },
 });
 </script>
 
 <style scoped>
 .card-option {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 5px;
   width: 100%;
-  height: 15rem /* Updated to min-height */
+  min-height: 10rem /* Updated to min-height */
 }
 .icon {
   margin-bottom: 10px;

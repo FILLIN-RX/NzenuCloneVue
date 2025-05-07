@@ -6,7 +6,7 @@
         <h5>{{ forfait.prix }}</h5>
       </div>
       <div class="forfait-bottom">
-        <ul class="attribute-list" @mouseenter="isExpanded = true" @mouseleave="handleMouseLeave">
+        <ul class="attribute-list"  @mouseleave="handleMouseLeave">
           <li v-for="(attr, index) in displayedAttributes" :key="index">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="1em" height="1em">
               <path fill="currentColor" d="m10 16.4l-4-4L7.4 11l2.6 2.6L16.6 7L18 8.4z"/>
@@ -14,11 +14,12 @@
             {{ attr }}
           </li>
         </ul>
-        <button class="btn-commander" @mouseenter="isExpanded = true">
+        <button class="btn-commander" @mouseenter="isExpanded = true" @mouseleave="handleMouseLeave">
           Commander
         </button>
       </div>
     </div>
+   
   </template>
   
   <script setup>
@@ -30,10 +31,11 @@
   
   const isExpanded = ref(false)
   const displayedAttributes = computed(() => {
-  if (!forfait || !forfait.atribute) return []
-  return expand.value ? forfait.atribute : forfait.atribute.slice(0, 12)
+  if (!props.forfait || !props.forfait.atribute) return []
+  return isExpanded.value ? props.forfait.atribute : props.forfait.atribute.slice(0, 12)
 })
 
+  
   
   
   function handleMouseLeave() {
@@ -48,6 +50,15 @@
   <style scoped>
   .forfait-card {
     border-radius: 10px;
+  }
+  li{
+    list-style-type: none;
+  }
+  li:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+  li:nth-child(even) {
+    background-color: #e0e0e0;
   }
   
   .forfait-head {

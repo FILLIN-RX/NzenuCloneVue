@@ -5,7 +5,7 @@
       class="whatsapp-button"
       aria-label="Contact via WhatsApp"
     >
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
+      <img src="../assets/image.png" alt="WhatsApp" />
     </a>
   </template>
   
