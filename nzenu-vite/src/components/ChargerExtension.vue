@@ -110,7 +110,7 @@
     background-color: white;
   }
   .mmm{
-    text-align: end;
+    text-align: right;
   }
   #domainetable{
     text-align: center;

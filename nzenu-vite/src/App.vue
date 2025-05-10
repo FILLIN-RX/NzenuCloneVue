@@ -1,5 +1,5 @@
 <template>
-  <NavBar/>
+  <NavBar />
   <RouterView/>
   <WhatzappButton />
   <FooTer />

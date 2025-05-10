@@ -6,6 +6,7 @@
 
 <template>
     <EntetePages  :titre="titre" :donnee="donnee" :photo="photo"/>
+    <ForfaitSsl />
 
     
    
@@ -15,7 +16,7 @@
 
 <script setup>
    import EntetePages from '@/components/EntetePages.vue'
-   import CardOption from '@/components/CardOption.vue'
+   import ForfaitSsl from '../components/ForfaitSsl.vue';
 
 
 
@@ -24,7 +25,7 @@
    import photo from '@/assets/image__7_-removebg-preview (2).png';
 </script>
 
-<style>
+<style scoped>
 
     CardOption {
         min-height: 5rem;

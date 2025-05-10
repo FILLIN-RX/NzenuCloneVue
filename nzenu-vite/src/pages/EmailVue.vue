@@ -64,7 +64,7 @@
    import photo from '@/assets/image__7_-removebg-preview (1).png';
 </script>
 
-<style>
+<style scoped>
     
     .col-lg-6{
         text-align: center;

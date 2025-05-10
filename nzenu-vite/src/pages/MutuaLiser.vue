@@ -28,7 +28,7 @@
 </script>
 
 
-<style setup>
+<style scoped>
 .mutualiser{
     background-color: #d1d5db;
 }

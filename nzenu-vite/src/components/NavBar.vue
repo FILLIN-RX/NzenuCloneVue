@@ -1,11 +1,11 @@
 <template>
     <nav class="w-100  ">
-        <div class="row">
+        <div class="row  container237">
             <div class="col-lg-4 col-md-5 col-sm-2">
                 <div class="row">
-                    <div class="col-lg-4 col-md-2 col-sm-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2">
                         <router-link class="nav-link" to="/">
-                            <img src="../assets/logo_Nzenuhost1_copie_2_4x-8_rnfqnu.png" alt="">
+                            <img src="../assets/logo_Nzenuhost1_copie_2_4x-8_rnfqnu.png" class="logo" alt="">
                         </router-link>
                     </div>
                     <div class="col-lg-8 col-md-10 col-sm-10">
@@ -20,30 +20,30 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-7 col-sm-6 ">
+            <div class="col-lg-8 col-md-7 col-sm-6 ">
                 <div class="row RechercheWhois">
                     <div class="col contact2">
                         <div class="row">
                             <div class="col-1"><img src="../assets/9b15aa35-ae1e-4ac0-a2bd-c6db8224f258.svg" alt=""></div>
-                            <div class="col-9"><a href="">657 882 614</a></div>
+                            <div class=" d-flex col justify-content-center align-items-center"><a href="">657 882 614</a></div>
                         </div>
                         <div class="row">
                             <div class="col-1">|</div>
-                            <div class="col-9">
+                            <div class="d-flex col justify-content-center align-items-center">
                                 <a href="">671 087 727</a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-1"><img src="../assets/364b0b55-515d-4284-92b5-09681c8539ce.svg" alt=""></div>
-                            <div class="col-9">
+                            <div class="d-flex col justify-content-center align-items-center">
                                 <a href="">support</a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-1"><img src="../assets/6cce5943-9d6d-48e0-ba6b-74daddf11190.svg" alt=""></div>
-                            <div class="col-9"><a href="">
-                                Espace client
-                            </a></div>
+                            <div class="d-flex col justify-content-center align-items-center"><router-link class="nav-link" to="/login">Espace client</router-link>
+                                
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -92,7 +92,7 @@
                 </li>
                 <li><router-link class="nav-link" to="/email">Email</router-link></li>
                 <li><router-link class="nav-link" to="/certificat-ssk">Certificate SSL</router-link></li>
-                <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
+                <li><router-link class="nav-link" to="/Dashboard">Blog</router-link></li>
             </ul>
         </div>
     </nav>
@@ -170,6 +170,7 @@
     background-color: white;
     border: 1px solid #ccc;
     z-index: 10;
+    display: none;
     }
 
     .nav-link:hover .link-content {
@@ -181,6 +182,10 @@
     }
     .contact2 img{
         width: 20px;
+    }
+    .logo{
+        width: 90px;
+        height: 90px;
     }
 /* pas de style pour le moment */
 /* ton style perso si besoin */
@@ -196,9 +201,9 @@
 
     @media (min-width:999px) {
   
-  .row{
-    padding: 0 10%;
-  }
+        .container237{
+            padding: 1% 10%;
+        }
   
 }
         
