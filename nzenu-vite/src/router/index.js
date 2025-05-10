@@ -36,7 +36,7 @@ const routes = [
   { path: '/certificat-ssk', component: CertificatSsk },
   { path: '/login',component: LogIn},
   { path: '/Mot de passe',component: MotdepasseOublier},
-  { path: '/Dashboard',component:DashBoard,
+  { path: '/Dashboard',component:DashBoard, meta: { showNavbarAndFooter: false } ,
     children: [
       { path: '/dashbaord', component:MiniDashbaord},
       { path: '/contact',component:MesContact},

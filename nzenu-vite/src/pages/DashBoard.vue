@@ -53,17 +53,18 @@
 </template>
 <script setup>
 
-
-
-
 </script>
+
+
+
+
 
 
 
 <style scoped>
 
 .column1{
-    background-color:#172554;
+    background-color:#082F49;
     height: 30rem;
 }
 .column1 .row{
@@ -77,7 +78,7 @@
     }
 }
 .column2{
-    background-color: rgb(222, 226, 226);
+    background-color: #E5E7EB;
 }
 .main{
     padding: 0 10%;

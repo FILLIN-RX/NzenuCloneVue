@@ -139,7 +139,7 @@
     .card{
         
         
-        background-color: rgba(228, 227, 227, 0.589);
+        background-color: #F9FAFB;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
         & span{
