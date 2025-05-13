@@ -68,7 +68,9 @@
 
 
 <style scoped>
-
+    *{
+        overflow: scroll;
+    }
     .primary{
         border: 1px solid;
         border-radius: 5px;
@@ -89,6 +91,6 @@
         border-bottom: 1px solid;
     }
 
-
+    
 
 </style>

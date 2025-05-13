@@ -4,7 +4,7 @@
      
      <p class="text-start"> <router-link to="/" class="text-danger "><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="M21 11H6.83l3.58-3.59L9 6l-6 6l6 6l1.41-1.41L6.83 13H21z"></path></svg><span>retour sur le site</span></router-link></p>
      
-    <div class="fr p-4 bg-light rounded shadow ">
+    <div class="fr p-4 bg-light rounded shadow  pt-2">
    
    
     <div class="row  main gap-2">
@@ -150,8 +150,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         
+        
+        
     }
+    @media (max-width: 750px) {
+        .main{
+            padding: 0;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+        }
+        .main1{
+            padding: 0;
+        }
 
+    }
 
 
 </style>

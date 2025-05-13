@@ -214,7 +214,7 @@
 }
 
 .vitessePerfomance {
-  background: red;
+  background:#7F1D1D;
 }
 .vitessePerfomance .row1{
   text-align: center;
@@ -267,7 +267,7 @@
   padding: 15px;
 }
 .pourqouiNousChoisir #pourqouiNousChoisirRow3 .col-md-12 {
-  background-color: #D1D5DB;
+  background-color: #E5E7EB;
   padding: 5px;
 }
 .pourqouiNousChoisir #pourqouiNousChoisirRow3 .col-sm-12 {
@@ -282,25 +282,35 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @media (max-width: 576px) {
-       #row1{
-
-       }
-        
-    }
-
-@media (min-width:999px) {
-  .container1{
-    padding: 1% 10%;
+      .container1{
+    padding: 0 5%;
   }
   .pourqouiNousChoisir{
-    padding: 1% 3%;
+    padding: 0% 9%;
   }
   .vitessePerfomance{
-    padding: 1% 10%;
+    padding: 0% 5%;
   }
   .containerslider{
-    padding: 1% 10%;
+    padding: 0% 5%;
+  }
+
+
+    }
+@media (min-width:999px) {
+  .container1{
+    padding: 1% 15%;
+  }
+  .pourqouiNousChoisir{
+    padding: 1% 9%;
+  }
+  .vitessePerfomance{
+    padding: 1% 15%;
+  }
+  .containerslider{
+    padding: 1% 15%;
   }
   
 }

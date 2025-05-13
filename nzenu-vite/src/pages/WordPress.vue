@@ -90,7 +90,7 @@
         background-color: white;
     }
     .mutualiser{
-        background-color: #d1d5db;
+        background-color: #E5E7EB;
     }
     section span{
         color: rgb(64, 137, 185);

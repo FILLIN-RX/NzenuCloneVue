@@ -21,7 +21,7 @@
             },
             backgroundColor: {
                 type: String,
-                default: 'oklch(0.359 0.144 278.697)'
+                default: '#10429E'
             },
             color: {
                 type: String,
@@ -55,9 +55,9 @@
     text-align: center;
     flex-direction: column;
     & button{
-        background-color: aqua;
+        background-color: #93F5F6;
         margin: 0;
-        border: 2px solid aqua;
+        border: 2px solid #93F5F6;
         font-weight: 500;
         height: 30px;
         width: 30%;
@@ -74,7 +74,7 @@
 }
 @media (min-width:999px) {
   .research{
-    padding: 1% 10%;
+    padding: 1% 15%;
   }
   
 }

@@ -133,7 +133,7 @@
 @media (min-width:999px) {
   
   #domain{
-    padding: 0 10%;
+    padding: 0 15%;
   }
   
 }

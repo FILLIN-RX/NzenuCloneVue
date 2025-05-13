@@ -54,7 +54,7 @@
 #seConnecter{
     padding: 3% 3% 5% 1%;
     margin: 0;
-    background-color: #d1d1d1;
+    background-color: #E5E7EB;
     min-height: 24rem;
 }
 

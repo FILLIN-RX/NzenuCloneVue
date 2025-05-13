@@ -30,11 +30,15 @@
   }
 
 
-
+  @media (max-width: 576px) {
+    #forfait{
+    padding: 1% 5%;
+  }
+  }
 
   @media (min-width:999px) {
   #forfait{
-    padding: 1% 10%;
+    padding: 1% 15%;
   }
   
 }

@@ -95,7 +95,7 @@
 @media (min-width:999px) {
   
   #sectionRealiser{
-    padding: 0 10%;
+    padding: 0 15%;
   }
   
 }

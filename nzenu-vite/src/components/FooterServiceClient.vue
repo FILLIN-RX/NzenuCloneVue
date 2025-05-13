@@ -1,10 +1,10 @@
 <template>
     <section class="supportClient">
         <div class="row">
-            <div class="d-flex col-md-3 col-lg-3 col-sm-12">
+            <div class="d-flex col-md-12 col-lg-3 col-sm-12">
                 <img src="../assets/image.jpeg" alt="">
             </div>
-            <div class="col-md-6 col-lg-9 col-sm-12" id="supportClientRow2">
+            <div class="d-flex col-md-12 col-lg-9 col-sm-12" id="supportClientRow2">
                 <div class="row">
                     <h5>Support client personnalisé 7J/7</h5>
                     <p>
@@ -118,7 +118,10 @@
 </script>
 
 <style>
-
+.containern{
+    background-color: #172554;
+    color: white;
+}
 .seulement p{
   text-align: left;
   background-color: #d1d5db;
@@ -164,7 +167,9 @@
         border-radius: 10px;
     }
 }
-
+img{
+    display: flex;
+}
 
 
 
@@ -192,6 +197,9 @@
 }
 .supportClient{
     padding: 5%;
+}
+img{
+    width: 50px;
 }
 }
 /* Tablette */
@@ -225,10 +233,10 @@
 /* Ordinateur */
 @media (min-width: 993px) {
   #firstfootercontainer{
-    padding: 2% 10%;
+    padding: 2% 15%;
   }
   .supportClient{
-    padding: 2% 10%;
+    padding: 2% 15%;
   }
 
   

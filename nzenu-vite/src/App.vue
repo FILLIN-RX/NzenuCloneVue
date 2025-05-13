@@ -1,8 +1,7 @@
 <template>
    <NavBar v-if="$route.meta.showNavbarAndFooter !== false" />
-  <transition name="fade">
+  
   <router-view :key="$route.fullPath" />
-</transition>
 
 
   <WhatzappButton />
@@ -27,26 +26,15 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-.fade-enter-active, .fade-leave-active {
-  transition: all 0.5s ease;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  ;
+
 }
 
-.fade-enter-from {
-  opacity: 0;
-  transform: translateY(20px);
-}
 
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-20px);
-}
 
 
 </style>

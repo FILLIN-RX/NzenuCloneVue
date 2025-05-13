@@ -113,11 +113,18 @@
 }
 
 .optionInclus .row .col-lg-3 {
-  background-color: #D1D5DB;
+  background-color: #E5E7EB;
   margin: 5px ;
   padding: 20px;
 }
-
+ 
+@media (min-width:999px) {
+  .optionInclus{
+    padding: 1% 4.5%;
+  }
+  
+  
+}
 
 
 </style>

@@ -30,7 +30,7 @@
 
 <style scoped>
 .mutualiser{
-    background-color: #d1d5db;
+    background-color: #E5E7EB;
 }
 
 

@@ -53,6 +53,7 @@
   }
   li{
     list-style-type: none;
+    padding: 5px;
   }
   li:nth-child(odd) {
     background-color: #f0f0f0;
@@ -73,7 +74,7 @@
   .forfait-bottom {
     border-radius: 0 0 10px 10px;
     border: 1px solid gray;
-    padding: 10px;
+    
   }
   
   .attribute-list {
