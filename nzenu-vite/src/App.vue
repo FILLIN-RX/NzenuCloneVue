@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style>
+@import "tailwindcss";
 * {
   box-sizing: border-box;
   margin: 0;

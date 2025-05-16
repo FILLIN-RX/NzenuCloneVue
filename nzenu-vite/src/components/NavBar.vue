@@ -26,24 +26,20 @@
             <div  v-if="!mobile" class="col-lg-6 col-md-7 col-sm-6  ">
                 <div class="row RechercheWhois">
                     <div class="col contact2">
-                        <div class="row">
-                            <div class="col-1"><img src="../assets/9b15aa35-ae1e-4ac0-a2bd-c6db8224f258.svg" alt=""></div>
-                            <div class=" d-flex col justify-content-center align-items-center"><a href="">657 882 614</a><span>|</span> <a href="">671 087 727</a></div>
+                        <div class=" d-flex col justify-content-center align-items-center">
+                            <img src="../assets/9b15aa35-ae1e-4ac0-a2bd-c6db8224f258.svg" alt="">
+                            <a href="">657 882 614</a><span>|</span> <a href="">671 087 727</a>
                         </div>
-                        <div class="row">
-                            <div class="col-1"><img src="../assets/364b0b55-515d-4284-92b5-09681c8539ce.svg" alt=""></div>
-                            <div class="d-flex col justify-content-center align-items-center">
-                                <a href="">support</a>
-                            </div>
+                        <div class=" d-flex col justify-content-center align-items-center">
+                            <img src="../assets/364b0b55-515d-4284-92b5-09681c8539ce.svg" alt="">
+                            <a href="">support</a>
                         </div>
-                        <div class="row">
-                            <div class="col-1"><img src="../assets/6cce5943-9d6d-48e0-ba6b-74daddf11190.svg" alt=""></div>
-                            <div class="d-flex col justify-content-center align-items-center"><router-link class="nav-link" to="/login">Espace client</router-link>
-                                
-                            </div>
+                        <div class=" d-flex col justify-content-center align-items-center">
+                            <img src="../assets/6cce5943-9d6d-48e0-ba6b-74daddf11190.svg" alt="">
+                            <router-link class="nav-link" to="/login">Espace client</router-link>
                         </div>
                         <div class="row" v-show="!mobile">
-                            <div class="col">
+                            <div class="col-1">
                                 <img src="../assets/b5faddc2-a770-4410-a6c1-7b2fd334e9f6.svg" alt="">
                             </div>
                         </div>
@@ -171,6 +167,7 @@
         transition: 500ms ease all;
         width: 100%;
         font-size: 1em;
+        
 
          .mobile-nav-enter-active,
          .mobile-nav-leave-active {
@@ -245,6 +242,8 @@
         display: flex;
         align-items: center; 
         flex-direction: column;
+        justify-content: flex-end;
+        text-align: end;
         flex: 2; /* Added to center items vertically */
         margin: 0;
         padding: 0;

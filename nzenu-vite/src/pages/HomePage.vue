@@ -173,7 +173,7 @@
   
   <style scoped>
 
-
+@import "tailwindcss";
   .container1{
     background-image: url(../assets/nzenuhost_wallpaper_2024.webp);
     background-repeat: no-repeat;
