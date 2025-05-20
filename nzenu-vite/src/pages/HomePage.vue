@@ -3,7 +3,7 @@
         <section>
                 <div class="container1"  >
                     <div class="row" id="row1" >
-                        <div class="col-md-6 col-lg-6 col-sm-12" id="row1-col1" style="display: flex; flex-direction: column; justify-content: center;">
+                        <div class="col-md-6 col-lg-6 col-sm-12" id="row1-col1">
                             <h1>l'hebergement Web qu'il vous faut !</h1>
                             <p>Nzenuhost est l'hebergeur web par excelence pour creer et gerer votre site web en tout simpliciter.Nous vous offrons des solution adaptees a vos 
                                 besoin, a votre budget et a votre niveau de competance.Profiter de la rapidite ,de la securite et de la fiabilite de nos serveurs.
@@ -40,7 +40,7 @@
             </section>
             <section>
                 <div class="pourqouiNousChoisir">
-                    <div class="row" style="text-align: center; display: flex;justify-content: center;">
+                    <div class="row">
                         <div class="col-lg-7">
                             <h4>Pourquoi Nous Choisir en Tant que Partenaire de Confiance</h4>
                             <p>
@@ -54,11 +54,11 @@
                         </div>
 
                     </div>
-                    <div class="row" style="text-align: center;display: flex; justify-content: center;">
+                    <div class="row">
 
                         <div class="col-lg-3 col-md-12 col-sm-12">
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <svg width="50" height="" style="color: rgb(211, 161, 22);" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-yellow-500 w-12 h-12" data-v-17c1c759="" viewBox="0 0 24 24" data-v-c3ad5561="">
+                                <svg width="50" height="" style="color: rgb(211, 161, 22)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-yellow-500 w-12 h-12" data-v-17c1c759="" viewBox="0 0 24 24" data-v-c3ad5561="">
                                     <path style="width:500px ;" fill="currentColor" d="M12 17.5q1.45 0 2.675-.7t1.975-1.9q.15-.3-.025-.6T16.1 14H7.9q-.35 0-.525.3t-.025.6q.75 1.2 1.988 1.9t2.662.7M8.9 9.95l.525.525q.225.225.525.225t.525-.225t.213-.525t-.213-.525l-.875-.9q-.3-.3-.712-.3t-.713.3l-.9.9q-.225.225-.225.525t.225.525q.2.2.513.213t.537-.188zm6.2 0l.575.55q.225.2.525.2t.525-.225t.225-.525t-.225-.525l-.9-.9q-.3-.3-.713-.3t-.712.3l-.9.9q-.2.225-.2.525t.225.525t.525.225t.525-.225zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22">
 
                                 </path>
@@ -95,7 +95,7 @@
                                 <svg  width="50" height="" color="blue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon w-12 h-12 text-blue-500" data-v-17c1c759="" style="" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="M19 11c0-3.87-3.13-7-7-7a6.99 6.99 0 0 0-6.74 5.15A5.49 5.49 0 0 0 1 14.5C1 17.54 3.46 20 6.5 20h12c2.49-.01 4.5-2.03 4.5-4.52c0-2.33-1.75-4.22-4-4.48m-6 2v2c0 .55-.45 1-1 1s-1-.45-1-1v-2H9.21c-.45 0-.67-.54-.35-.85l2.79-2.79c.2-.2.51-.2.71 0l2.79 2.79a.5.5 0 0 1-.35.85z"></path></svg>
                                 <h6>Sauvegardes quotidiennes</h6>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12" style="display: flex; justify-content: center;text-align:center">
+                            <div class="col-lg-12 col-md-12 col-sm-12" >
 
                                 <p>
                                     la sécurité de vos données est primordiale.
@@ -173,7 +173,7 @@
   
   <style scoped>
 
-@import "tailwindcss";
+
   .container1{
     background-image: url(../assets/nzenuhost_wallpaper_2024.webp);
     background-repeat: no-repeat;

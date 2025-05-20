@@ -1,10 +1,9 @@
 import { createApp } from 'vue'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import '@splidejs/vue-splide/css'; // style par défaut
+import './style.css'
+import '@splidejs/vue-splide/css' // style par défaut
 
 // In main.js or App.vue
-import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 import router from './router'
 import App from './App.vue'
