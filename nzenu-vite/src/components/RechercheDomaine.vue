@@ -1,12 +1,16 @@
 <template>
-    <div class="research" :style="{ background: backgroundColor }">
+    <div class="text-white h-30 flex flex-col justify-center items-center space-y-5" :style="{ background: backgroundColor }">
+        <div class="px-4 sm:px-6 lg:px-8 max-w-7xl sm:w-2/3 mx-auto space-y-2">
+
+        
       <h1 :style="{color:color}">{{ rechercher }}</h1>
-      <div class="coll">
-        <button>WWW</button>
-        <input type="text" placeholder="Search..." v-model="searchQuery" />
-        <button @click="search">Search</button>
+      <div class="coll w-full border flex justify-stretch">
+        <button class="bg-blue-200 py-3 lg:px-5 px-2 lg:text-xl font-bold text-blue-900">WWW</button>
+        <input class=" border py-3 px-1 lg:px-3 text-gray-600  outline-none w-100 bg-white" type="text" placeholder="par exemple(votreentreprise.com,cm,tech,ia,co,org,....)" v-model="searchQuery" />
+        <button class="outline-none lg:px-5 py-3 px-2 lg:text-xl bg-blue-200 font-bold  text-blue-900 font-bold" @click="search">Search</button>
       </div>
     </div>
+</div>
   </template>
   
 

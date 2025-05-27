@@ -15,7 +15,7 @@
     >
       <SplideSlide v-for="(card, index) in cards" :key="index">
         <div class="card">
-          <img :src="card.image" alt="Card image" class="card-image" />
+          <img :src="card.image" alt="Card image" class="card-image w-32 h-32 mx-auto rounded-full border-2 border-green-200" />
           <div class="card-content">
             <h3 class="card-title">{{ card.name }}</h3>
             <h4 class="card-title2">{{ card.title }}</h4>
@@ -75,10 +75,8 @@
   }
   
   .card-image {
-    width: 20%;
-    height: 180px;
+  
     object-fit: cover;
-    border-radius: 50%;
     align-self: center;
   }
   

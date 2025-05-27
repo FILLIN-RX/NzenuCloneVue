@@ -15,7 +15,7 @@
 
 
 defineProps({
-  icon: String,   // On passera le SVG sous forme de string
+  icon: String,   
   title: String,
   content: String,
   backgroundColor: {

@@ -1,10 +1,10 @@
 <template>
     <section class="supportClient">
-        <div class="row">
-            <div class="d-flex col-md-12 col-lg-3 col-sm-12">
-                <img src="../assets/image.jpeg" alt="">
+        <div class="lg:flex">
+            <div class="p-5">
+                <img class="w-50 h-50 rounded-full border-2 border-green-200" src="../assets/image.jpeg" alt="">
             </div>
-            <div class="d-flex col-md-12 col-lg-9 col-sm-12" id="supportClientRow2">
+            <div class="p-5" id="supportClientRow2">
                 <div class="row">
                     <h5>Support client personnalisé 7J/7</h5>
                     <p>
@@ -118,132 +118,6 @@
 </script>
 
 <style>
-.containern{
-    background-color: #172554;
-    color: white;
-}
-.seulement p{
-  text-align: left;
-  background-color: #d1d5db;
-}
-.supportClient{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-}
-#supportClientRow2{
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-.supportClient {
-  background-color: #172554;
-  color: #fff;
-}
-
-.supportClient img {
-  border-radius: 400px;
- max-width: 300px;
-  border: 4px solid rgb(107, 107, 194);
-  display: flex;
-  flex-shrink: 2;
-}
-#supportClientRow2 h5{
-    height: 24px;
-}
-
-#firstfootercontainer{
-    text-align: left;
-    background-color: #1045A5;
-    color: white;
-
-    & a{
-        text-decoration: none;
-        color: white;
-    }
-
-    & img{
-        width: 100px;
-        border-radius: 10px;
-    }
-}
-img{
-    display: flex;
-}
-
-
-
-/* Mobile */
-@media (max-width: 576px) {
-  #firstfootercontainer{
-    padding: 0% 1%;
-  }
-
-#sectionRealiser .col-lg-4{
-  display: none;
-}
-#supportClientRow2{
-  display: flex;
-  text-align: start;
-  justify-content: left;
-  padding: 1%;
-}
-#supportClientRow2 .row p{
-    text-align: start;
-}
-#supportClientRow2 img {
-  max-width: 100%;
-  height: auto;
-}
-.supportClient{
-    padding: 5%;
-}
-img{
-    width: 50px;
-}
-}
-/* Tablette */
-@media (max-width: 992px) {
-  #firstfootercontainer{
-    padding: 1% 5%;
-  }
-#supportClientRow2{
-  display: flex;
-  text-align: start;
-  justify-content: left;
-}
-#supportClientRow2 .row p{
-    text-align: start;
-}
-#supportClientRow2 img {
-  max-width: 100%;
-  height: auto;
-}
-.supportClient{
-    padding: 7%;
-}
-
-
-#sectionRealiser .col-lg-4{
-  display: none;
-}
-
-}
-
-/* Ordinateur */
-@media (min-width: 993px) {
-  #firstfootercontainer{
-    padding: 2% 15%;
-  }
-  .supportClient{
-    padding: 2% 15%;
-  }
-
-  
-
-
-}
-
 
 
 

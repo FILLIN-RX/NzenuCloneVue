@@ -1,35 +1,30 @@
 <template>
   <nav :class="{ 'scrolled-nav': scrollNav }">
-    <div class="lg:px-40 flex h-20 justify-between bg-blue-800 space-y-3  text-white">
-        <div class="flex py-5">
-          <div class="">
-            <router-link class="nav-link" to="/">
-              <img
-                src="../assets/logo_Nzenuhost1_copie_2_4x-8_rnfqnu.png"
-                class="w-10"
-                alt=""
-              />
-            </router-link>
-          </div>
-          <div class="">
-            <div class="">
-              <div class="col">
-                <p v-if="!mobile">Avis client</p>
-              </div>
-              <div class="">
-                <p>L'hébergement web accessible à tous</p>
-              </div>
+    <div class="lg:px-40 flex md:h-20 h-15 justify-between bg-blue-900 space-y-3  text-white sm:px-5">
+        
+            <div class="flex py-5 space-y-5">
+                <div class="items-center flex justify-center">
+                    <router-link class="nav-link" to="/">
+                    <img
+                        src="../assets/logo_Nzenuhost1_copie_2_4x-8_rnfqnu.png"
+                        class="w-20 items-center flex justify-center"
+                        alt=""
+                    />
+                    </router-link>
+                </div>
+                <div class="items-center flex justify-center">
+                    <div class="">
+                    <div class="col">
+                        <p v-if="!mobile">Avis client</p>
+                    </div>
+                    <div class=" ">
+                        <p>L'hébergement web accessible à tous</p>
+                    </div>
+                </div>  
             </div>
+            
           </div>
-          <div class="icon" v-show="mobile">
-        <img
-          @click="toggleMobileNav"
-          :class="{ 'icon-active': mobileNav }"
-          src="../assets/8604bcf1-d9e9-4924-ab99-89e8a04d5de4.svg"
-          alt=""
-        />
-      </div>
-        </div>
+        
     
       <div v-if="!mobile" >
         <div class="flex text-center">
@@ -74,6 +69,14 @@
           </div>
         </div>
       </div>
+      <div class=" items-center flex justify-center" v-show="mobile">
+                <img
+                @click="toggleMobileNav"
+                :class="{ 'icon-active': mobileNav }"
+                src="../assets/8604bcf1-d9e9-4924-ab99-89e8a04d5de4.svg"
+                alt=""
+                />
+            </div>
     </div>
 
     <div class="">

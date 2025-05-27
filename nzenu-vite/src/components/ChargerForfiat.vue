@@ -1,12 +1,13 @@
 <template>
-    <div class="row" id="forfait">
+    <div class="lg:grid grid-cols-4 gap-5 " id="forfait">
       <ForfaitCard
         v-for="(forfait, index) in forfaits"
         :key="index"
         :forfait="forfait"
       />
-      <p>* Seuleument les noms de domaine (.com , .cm) sont inclus</p>
+      
     </div>
+    <p>* Seuleument les noms de domaine (.com , .cm) sont inclus</p>
   </template>
   
   <script setup>

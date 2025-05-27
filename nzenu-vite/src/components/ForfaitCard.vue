@@ -1,5 +1,5 @@
 <template>
-    <div class="col-sm-12 col-md-12 col-lg-3 forfait-card">
+    <div class="hover:shadow-md">
       <div class="forfait-head">
         <h5>{{ forfait.name }}</h5>
         <p>{{ forfait.content }}</p>
