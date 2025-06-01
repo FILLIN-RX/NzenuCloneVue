@@ -1,22 +1,25 @@
 <template>
     <section id="domain">
       <div class="row" id="domainetable">
-        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="flex justify-center items-center flex-col space-y-2">
           <h5>Notre sélection d'extensions</h5>
-          <p>
+          <p class="w-1/3">
             Découvrez notre sélection d'extensions de domaine soigneusement choisies pour vous. Chaque domaine est
             disponible à partir de 8000 FCFA par an, garantissant une présence en ligne durable et professionnelle.
             Choisissez parmi une variété d'options telles que .com, .tech, .store et bien d'autres. Créez une identité
             numérique forte dès aujourd'hui.
           </p>
         </div>
-        <div class="row sech">
-          <div class="col-lg-6 col-sm-12">
-            <input type="search" v-model="searchQuery" placeholder="Rechercher un domaine" />
-            <input id="buttonRecherche" type="button" value="Search" @click="searchDomain" />
+        <div class="lg:flex justify-between items-center lg:space-y-0 space-y-2">
+          <div class="flex items-center space-x-2">
+            <div class="border p-1 outline-none border-blue-900" >
+              <input type="search"class="bg-transparent outline-none"  v-model="searchQuery" placeholder="Rechercher un domaine" />
+            </div>
+           
+            <input id="buttonRecherche" class="bg-green-200 text-900 font-bold py-1 px-3 hover:bg-white hover:border-blue-900 border" type="button" value="Search" @click="searchDomain" />
           </div>
           <div class="col-lg-6 col-sm-12  mmm">
-            <button id="buttonactualiser" @click="refresh">Actualiser</button>
+            <button class="px-2 py-1 bg-green-200 text-blue-900 font-bold hover:bg-white border hover:border-blue-900"  id="buttonactualiser" @click="refresh">Actualiser</button>
           </div>
         </div>
       </div>
@@ -96,47 +99,7 @@
   
   <style scoped>
   /* Add your styles for table, buttons, etc. */
-  .old-price {
-    text-decoration: line-through red;
-    color: grey;
-  }
-  .col-sm-12{
-    text-align: start;
-  }
-  .col-md-12{
-    text-align: center;
-  }
-  #domain{
-    background-color: white;
-  }
-  .mmm{
-    text-align: right;
-  }
-  #domainetable{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .sech{
-    text-align: center;
-    display: flex;
-    width: 100%;
-    padding: 0;
-  }
-  table{
-    width: 100%;
-  }
-  tr:nth-child(odd) {
-  background-color:#d1d5db;
-  width: 100%;
-}
-@media (min-width:999px) {
-  
-  #domain{
-    padding: 0 15%;
-  }
-  
-}
+
 
   </style>
   
