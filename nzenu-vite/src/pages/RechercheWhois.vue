@@ -1,6 +1,6 @@
 <template>
   <EntetePages :titre="titre" :donnee="donnee" :photo="photo" backgoundColor="black" />
-   <RechercheDomaine backgroundColor="#d1d5db" rechercher="" />
+   <RechercheDomaine  class="bg-gray-200" rechercher="" />
 </template>
 
 <script setup>

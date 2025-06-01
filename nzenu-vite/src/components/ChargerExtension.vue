@@ -2,7 +2,7 @@
     <section id="domain">
       <div class="row" id="domainetable">
         <div class="flex justify-center items-center flex-col space-y-2">
-          <h5>Notre sélection d'extensions</h5>
+          <h2 class="font-bold text-3xl">Notre sélection d'extensions</h2>
           <p class="w-1/3">
             Découvrez notre sélection d'extensions de domaine soigneusement choisies pour vous. Chaque domaine est
             disponible à partir de 8000 FCFA par an, garantissant une présence en ligne durable et professionnelle.
@@ -10,45 +10,45 @@
             numérique forte dès aujourd'hui.
           </p>
         </div>
-        <div class="lg:flex justify-between items-center lg:space-y-0 space-y-2">
+        <div class="lg:flex justify-between items-center py-5 lg:px-40 lg:space-y-0 space-y-2">
           <div class="flex items-center space-x-2">
             <div class="border p-1 outline-none border-blue-900" >
               <input type="search"class="bg-transparent outline-none"  v-model="searchQuery" placeholder="Rechercher un domaine" />
             </div>
            
-            <input id="buttonRecherche" class="bg-green-200 text-900 font-bold py-1 px-3 hover:bg-white hover:border-blue-900 border" type="button" value="Search" @click="searchDomain" />
+            <input id="buttonRecherche" class="bg-[#93F5F6] text-[#1045A5] font-bold py-1 px-3 hover:bg-white hover:border-blue-900 border" type="button" value="Search" @click="searchDomain" />
           </div>
           <div class="col-lg-6 col-sm-12  mmm">
-            <button class="px-2 py-1 bg-green-200 text-blue-900 font-bold hover:bg-white border hover:border-blue-900"  id="buttonactualiser" @click="refresh">Actualiser</button>
+            <button class="px-2 py-1 bg-[#93F5F6] text-[#1045A5] font-bold hover:bg-white border hover:border-blue-900"  id="buttonactualiser" @click="refresh">Actualiser</button>
           </div>
         </div>
       </div>
   
-      <div class="row justify-content-center domaine">
-        <div class="col-12">
+      <div class="flex justify-center lg:px-40">
+        <div class="flex justify-center items-center w-full">
 
         
-        <table v-if="domains.length">
+        <table class="w-full text-center space-y-5 text-lg" v-if="domains.length">
           <thead>
-            <tr>
+            <tr >
               <th></th>
               <th></th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(domain, index) in domains" :key="index">
-              <td>{{ domain.domain }}</td>
+            <tr class="flex justify-between space-y-5 odd:bg-gray-200 px-10 items-center" v-for="(domain, index) in domains" :key="index">
+              <td class="flex items-center">{{ domain.domain }}</td>
               <td>{{ domain.newPrice }}</td>
-              <td class="old-price">{{ domain.oldPrice }}</td>
+              <td class="line-through decoration-red-800">{{ domain.oldPrice }}</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
   
-      <div id="buttonExtensionContainer">
-        <button id="buttonExtension" @click="loadMoreExtensions">Charger plus d'extensions</button>
+      <div class="flex justify-center p-5">
+        <button class="px-2 space-x-2 items-center py-1 bg-[#93F5F6] text-[#1045A5] font-bold flex justify-center hover:bg-white border hover:border-primary-900"  id="buttonExtension" @click="loadMoreExtensions">Charger plus d'extensions</button>
       </div>
     </section>
   </template>

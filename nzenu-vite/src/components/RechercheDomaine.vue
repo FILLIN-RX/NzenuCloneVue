@@ -25,7 +25,7 @@
             },
             backgroundColor: {
                 type: String,
-                default: '#10429E'
+                
             },
             color: {
                 type: String,
