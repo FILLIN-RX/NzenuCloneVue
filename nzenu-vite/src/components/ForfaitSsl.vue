@@ -1,12 +1,14 @@
 <template>
-    <div class="row" id="forfait">
+    <div class="lg:grid grid-cols-4 gap-5 bg-gray-100 lg:px-40 pt-20 " id="forfait">
       <ForfaitCard
         v-for="(forfait, index) in forfaits"
         :key="index"
         :forfait="forfait"
       />
-      <p>* Seuleument les noms de domaine (.com , .cm) sont inclus</p>
+      
     </div>
+    <p>* Seuleument les noms de domaine (.com , .cm) sont inclus</p>
+
   </template>
   
   <script setup>
@@ -22,21 +24,11 @@
   </script>
   
   <style scoped>
-  #forfait {
-    background-color: #d1d5db;
-    & p{
-      text-align: start;
-    }
-  }
+ 
 
 
 
 
-  @media (min-width:999px) {
-  #forfait{
-    padding: 1% 15%;
-  }
   
-}
   </style>
   

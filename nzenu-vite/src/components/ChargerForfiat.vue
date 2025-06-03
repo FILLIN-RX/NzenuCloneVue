@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:grid grid-cols-4 gap-5 bg-gray-100 " id="forfait">
+    <div class="lg:grid grid-cols-4 gap-5 bg-gray-100 lg:px-40 " id="forfait">
       <ForfaitCard
         v-for="(forfait, index) in forfaits"
         :key="index"
@@ -31,17 +31,5 @@
   }
 
 
-  @media (max-width: 576px) {
-    #forfait{
-    padding: 1% 5%;
-  }
-  }
-
-  @media (min-width:999px) {
-  #forfait{
-    padding: 1% 15%;
-  }
-  
-}
   </style>
   

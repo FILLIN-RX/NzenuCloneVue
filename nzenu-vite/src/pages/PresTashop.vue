@@ -7,52 +7,52 @@
   />
 
   <section class="one">
-    <h4 class="optionInclusMain">
+    <h4 class="text-xl lg:text-2xl font-semibold text-center">
       Pourquoi choisir notre hebergement Prestashop?
     </h4>
-    <div class="align-items-center justify-content-center p-3 text-start">
+    <div class="grid lg:grid-cols-3 items-center justify-content-center p-3 text-start gap-3">
       <CardOption
-        :cardClass="['m-1']"
+        class="bg-gray-200 p-4 space-y-2"
         title="Performance Exceptionnelle"
         content="Maximisez la vitesse de chargement de votre boutique en ligne grâce à notre infrastructure de pointe, assurant une expérience utilisateur fluide et réactive."
       />
 
       <CardOption
-        :cardClass="['m-1']"
+         class="bg-gray-200 p-4 space-y-2"
         title="Sécurité Renforcée"
         content="Votre tranquillité d'esprit est primordiale. Profitez de mesures de sécurité avancées et de certificats SSL pour protéger vos données et garantir la confiance de vos clients."
       />
 
       <CardOption
-        :cardClass="['m-1']"
+         class="bg-gray-200 p-4 space-y-2"
         title="Support Expert"
         content="Notre équipe de spécialistes PrestaShop est là pour vous guider à chaque étape. Bénéficiez d'un support technique avisé pour l'installation, la configuration et la maintenance de votre boutique en ligne."
       />
 
       <CardOption
-        :cardClass="['m-1']"
+         class="bg-gray-200 p-4 space-y-2"
         title="Mises à Jour Simplifiées"
         content="Restez à jour avec les dernières fonctionnalités de PrestaShop sans souci. Notre hébergement facilite les mises à jour pour une compatibilité et une sécurité constantes."
       />
 
       <CardOption
-        :cardClass="['m-1']"
+         class="bg-gray-200 p-4 space-y-2"
         title="Personnalisation Optimale"
         content="Profitez d'un accès complet aux paramètres du serveur, vous permettant de personnaliser l'environnement pour répondre précisément aux besoins de votre boutique."
       />
 
       <CardOption
-        :cardClass="['m-1']"
+         class="bg-gray-200 p-4 space-y-2"
         title="Fiabilité Éprouvée"
         content="Rejoignez des milliers de propriétaires de boutiques en ligne satisfaits qui ont choisi notre hébergement PrestaShop pour sa performance, sa sécurité et son support de qualité."
       />
     </div>
   </section>
-  <section id="sectionForfait" style="background: #d1d5db; text-align: center">
+  <section id="sectionForfait" >
     <div class="forfait">
-      <div class="row" id="first">
+      <div class="mt-15 mb-7 lg:w-2/3 mx-auto text-center lg:px-40">
         <div class="col-lg-6">
-          <h3>Prêt à Faire Décoller Votre Boutique PrestaShop ?</h3>
+          <h3 class="text-xl lg:text-2xl text-center">Prêt à Faire Décoller Votre Boutique PrestaShop ?</h3>
           <p>
             Rejoignez des milliers de propriétaires de boutiques en ligne qui
             ont choisi notre hébergement web optimisé pour PrestaShop. Faites
@@ -63,7 +63,7 @@
           </p>
         </div>
       </div>
-      <div class="row" id="forfait">
+      <div class="bg-white">
         <ChargerForfiat />
       </div>
     </div>

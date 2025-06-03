@@ -6,6 +6,9 @@
 
 <template>
     <EntetePages  :titre="titre" :donnee="donnee" :photo="photo"/>
+    <div >
+
+    </div>
     <ForfaitSsl />
 
     

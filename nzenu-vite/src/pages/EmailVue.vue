@@ -5,45 +5,44 @@
 <template>
     <EntetePages  :titre="titre" :donnee="donnee" :photo="photo"/>
 
-    <section>
-        <h4 class="optionInclusMain">Avantages des E-mails Pro</h4> 
-   <div class="row align-items-center justify-content-center p-3 text-start">
-    <div class="col-lg-3 col-md-12 col-sm-12 m-1 ">
+    <section class="bg-gray-200" >
+        <h4 class="lg:text-2xl lg:px-40 text-center font-semibold py-10">Avantages des E-mails Pro</h4> 
+   <div class="grid lg:px-40  lg:grid-cols-3 gap-3 items-center justify-center p-3 text-start">
+    
         <CardOption
-            backgroundColor="white"
+           class="bg-white p-4 space-y-2"
             title="Identité de Marque"
             content="Communiquez avec vos clients à partir d'une adresse e-mail professionnelle liée à votre domaine, renforçant ainsi votre image de marque."
         />
-    </div>
-    <div class="col-lg-3 col-md-12 col-sm-12 m-1">
+   
         <CardOption
-        backgroundColor="white"
+         class="bg-white p-4 space-y-2"
         title="Sécurité Améliorée"
         content="Protégez vos communications avec des fonctionnalités de sécurité avancées, notamment le filtrage des spams et la détection des logiciels malveillants."
         />
-    </div>
-    <div class="col-lg-3 col-md-12 col-sm-12 m-1">
+   
+    
         <CardOption
-        backgroundColor="white"
+         class="bg-white p-4 space-y-2"
         title="Collaboration éfficace"
         content="Facilitez la collaboration au sein de votre équipe en partageant des calendriers, des contacts et des documents directement depuis votre boîte de réception."
         />
-    </div>
+   
     
 
    </div>
    <div>
-        <h2>Plans d'E-mails Pro</h2>
+        <h2 class="lg:text-2xl lg:px-40 text-center font-semibold my-10">Plans d'E-mails Pro</h2>
         <ChargerForfiat />
    </div>
    
    <section>
-        <div class="row  justify-content-center text-align-center">
-            <div class="col-lg-6 col-md-12 col-sm-12 m-1 ">
+        
+            <div class="sm:px-6 max-w-7xl lg:w-1/2 mx-auto text-center py-5 px-5 lg:px-0">
                      <p>Prêt à transformer votre communication professionnelle ? Obtenez dès aujourd'hui votre propre adresse e-mail personnalisée et sécurisée. Améliorez la crédibilité de votre entreprise, renforcez la collaboration interne et simplifiez vos communications. Rejoignez notre communauté d'entreprises prospères et commencez à profiter des avantages des e-mails professionnels</p>
             </div>
 
-        </div>
+        
        
    </section>
     </section>
@@ -66,18 +65,6 @@
 
 <style scoped>
     
-    .col-lg-6{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-    CardOption {
-        min-height: 5rem;
-        padding: 1rem; /* Adding padding for better spacing */
-    }
 
-    section{
-        background-color: #d1d5db;
-    }
 
 </style>
