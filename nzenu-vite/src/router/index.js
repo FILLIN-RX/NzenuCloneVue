@@ -23,6 +23,7 @@ import MiniSsl from '../../mini-pages/MiniSsl.vue'
 import EmailPro from '../../mini-pages/EmailPro.vue'
 import HebergementWeb from '../../mini-pages/HebergementWeb.vue'
 import RenouVellement from '../../mini-pages/RenouVellement.vue'
+import RegistraTion from '../pages/RegistraTion.vue'
 const routes = [
   { path: '/', component: HomePage },
   { path: '/RechercheWhois', component: RechercheWhois },
@@ -36,6 +37,7 @@ const routes = [
   { path: '/certificat-ssk', component: CertificatSsk },
   { path: '/login',component: LogIn},
   { path: '/Mot de passe',component: MotdepasseOublier},
+  { path: '/registration', component: RegistraTion },
   { path: '/Dashboard',component:DashBoard, meta: { showNavbarAndFooter: false } ,
     children: [
       { path: '/dashbaord', component:MiniDashbaord},
