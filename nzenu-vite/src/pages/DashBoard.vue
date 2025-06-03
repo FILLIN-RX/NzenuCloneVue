@@ -78,7 +78,7 @@
 
         <div class="flex lg:px-40 w-full">
             <div v-show="!mobile" class="p-5 text-black bg-sky-950 h-screen">
-                <div class="text-white">
+                <div class="text-white flex space-x-2">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -95,7 +95,7 @@
                             active-class="active">Dashbaord</router-link>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="text-white flex space-x-2">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -110,7 +110,7 @@
                             active-class="active">Contact</router-link>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="text-white flex space-x-2">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -126,7 +126,7 @@
                         <router-link to="commande">Commandes</router-link>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="text-white flex space-x-2">
                     <div class="col-2">
                         <svg width="2em" height="1.3em" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -141,7 +141,7 @@
                             domaine</router-link>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="text-white flex space-x-2"">
                     <div class="col-1">
                         <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -161,7 +161,7 @@
                             active-class="active">Hebergement Web</router-link>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="text-white flex space-x-2">
                     <div class="col-1">
                         <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -176,7 +176,7 @@
                             SSL</router-link>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="text-white flex space-x-2">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -195,7 +195,7 @@
                             Pro</router-link>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="text-white flex space-x-2">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -217,7 +217,7 @@
             </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown">
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style=""
@@ -234,7 +234,7 @@
                                 active-class="active">Dashbaord</router-link>
                         </div>
                     </div>
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="col-1">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style=""
@@ -249,7 +249,7 @@
                                 active-class="active">Contact</router-link>
                         </div>
                     </div>
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="col-1">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style=""
@@ -266,7 +266,7 @@
                                 active-class="active">Commandes</router-link>
                         </div>
                     </div>
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="col-2">
                             <svg width="2em" height="1.3em" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -281,7 +281,7 @@
                                 domaine</router-link>
                         </div>
                     </div>
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="col-1">
                             <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -301,7 +301,7 @@
                                 active-class="active">Hebergement Web</router-link>
                         </div>
                     </div>
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="col-1">
                             <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -317,7 +317,7 @@
                                 active-class="active">Certificate SSL</router-link>
                         </div>
                     </div>
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="col-1">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style=""
@@ -336,7 +336,7 @@
                                 active-class="active">Email Pro</router-link>
                         </div>
                     </div>
-                    <div class="row text-white">
+                    <div class="text-white flex space-x-2">
                         <div class="col-1">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style=""
