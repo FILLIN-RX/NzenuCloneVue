@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:grid grid-cols-4 gap-5 bg-gray-100 lg:px-40 " id="forfait">
+    <div class="lg:grid grid-cols-4 gap-5 bg-gray-100 px-4 space-y-5 lg:px-40 " id="forfait">
       <ForfaitCard
         v-for="(forfait, index) in forfaits"
         :key="index"

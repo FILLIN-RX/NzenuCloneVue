@@ -1,6 +1,8 @@
 <template>
+  <div class="pt-15">
   <EntetePages :titre="titre" :donnee="donnee" :photo="photo" backgoundColor="black" />
    <RechercheDomaine  class="bg-gray-200" rechercher="" />
+  </div>
 </template>
 
 <script setup>

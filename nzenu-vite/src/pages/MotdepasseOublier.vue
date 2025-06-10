@@ -1,5 +1,5 @@
 <template>
-  <section id="seConnecter">
+  <section id="seConnecter" class="pt-16">
     <div class="container">
       <div class="seConnecter">
         <h4>Mot de passe oublié?</h4>

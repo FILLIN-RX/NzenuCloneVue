@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-gray-200 lg:flex justify-center items-center py-10 lg:px-40 px-5"
+    class="bg-gray-200 lg:flex justify-center items-center pt-15 py-10 lg:px-40 px-5"
     id="seConnecter"
   >
     <div class="flex space-x-2 w-full">

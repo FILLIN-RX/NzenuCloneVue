@@ -1,5 +1,5 @@
 <template>
-   <NavBar v-if="$route.meta.showNavbarAndFooter !== false" />
+   <NavBar v-if="$route.meta.showNavbarAndFooter !== false"  />
   
   <router-view :key="$route.fullPath" />
 

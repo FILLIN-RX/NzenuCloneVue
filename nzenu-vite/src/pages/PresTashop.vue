@@ -1,4 +1,5 @@
 <template>
+  <div class="pt-16">
   <EntetePages
     :titre="titre"
     :donnee="donnee"
@@ -68,6 +69,7 @@
       </div>
     </div>
   </section>
+  </div>
 </template>
 
 <script setup>

@@ -1,4 +1,7 @@
 <template>
+  <div class="pt-15">
+
+  
   <EntetePages :titre="titre" :donnee="donnee" :photo="photo" />
 
   <section class="lg:px-40 text-center">
@@ -89,7 +92,9 @@
       </button>
       </CardOption>
     </div>
+
   </section>
+  </div>
 </template>
 
 <script setup>

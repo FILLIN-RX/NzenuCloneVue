@@ -1,4 +1,5 @@
 <template>
+  <div class="pt-15">
   <EntetePages :titre="titre" :donnee="donnee" :photo="photo" />
   <RechercheDomaine backgroundColor="white" />
 
@@ -54,6 +55,7 @@
     </div>
   </section>
   <ChargerForfait />
+  </div>
 </template>
 
 <script setup>

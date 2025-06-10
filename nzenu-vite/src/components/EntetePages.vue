@@ -4,7 +4,7 @@
     :style="{ background: backgroundColor }"
   >
     <div
-      class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-white font-medium flex items-center"
+      class="mx-auto px-4 sm:px-6 lg:px-40  text-white font-medium flex items-center"
     >
       <div class="flex lg:justify-between">
         <div class="lg:w-1/2 lg:mr-auto flex items-center">

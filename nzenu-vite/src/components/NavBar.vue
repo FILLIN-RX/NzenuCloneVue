@@ -1,6 +1,6 @@
 <template>
-  <nav :class="{ 'scrolled-nav': scrollNav }">
-    <div class="lg:px-40 flex md:h-20 h-15 justify-between bg-blue-900 space-y-3  text-white sm:px-5">
+  <nav :class="{ 'scrolled-nav': scrollNav }" class="fixed w-full">
+    <div class="lg:px-40 flex md:h-20 h-15 justify-between bg-blue-900 space-y-3    index-90 text-white sm:px-5">
         
             <div class="flex py-5 space-y-5">
                 <div class="items-center flex justify-center">
@@ -73,13 +73,14 @@
                 <img
                 @click="toggleMobileNav"
                 :class="{ 'icon-active': mobileNav }"
+                class="w-10"
                 src="../assets/8604bcf1-d9e9-4924-ab99-89e8a04d5de4.svg"
                 alt=""
                 />
             </div>
     </div>
 
-    <div class="">
+    <div class="bg-white">
       <ul v-show="!mobile" class="lg:px-40 flex justify-between font-bold text-blue-900">
         <li>
           <router-link class="nav-link" to="/">Nom de domaine</router-link>
@@ -244,4 +245,36 @@ export default {
     .link-content{
         display: none;
     }
+.fixed{
+  z-index: 99;
+}
+.mobile-nav-enter-active,
+.mobile-nav-leave-active {
+    transition: 1s ease all;
+}
+
+.mobile-nav-enter-from,
+.mobile-nav-leave-to {
+    transform: translateX(-250px);
+}
+
+.mobile-nav-enter-to {
+    transform: translateX(0);
+}
+.dropdown {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    position: fixed;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    padding-left: 30px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transition: 500ms ease all;
+
+
+}
 </style>

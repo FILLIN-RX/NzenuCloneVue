@@ -1,4 +1,7 @@
 <template>
+  <div class="pt-15">
+
+ 
   <EntetePages
     :titre="titre"
     :donnee="donnee"
@@ -6,6 +9,7 @@
     backgroundColor="black"
   />
   <ChargerForfiat />
+  </div>
 </template>
 
 <script setup>

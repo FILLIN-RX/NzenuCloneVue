@@ -1,16 +1,16 @@
 <template>
     <section id="domain">
       <div class="row" id="domainetable">
-        <div class="flex justify-center items-center flex-col space-y-2">
-          <h2 class="font-bold text-3xl">Notre sélection d'extensions</h2>
-          <p class="w-1/3">
+        <div class="flex justify-center px-5 items-center flex-col space-y-2">
+          <h2 class="font-bold text-3xl text-center">Notre sélection d'extensions</h2>
+          <p class="lg:w-1/3  text-center">
             Découvrez notre sélection d'extensions de domaine soigneusement choisies pour vous. Chaque domaine est
             disponible à partir de 8000 FCFA par an, garantissant une présence en ligne durable et professionnelle.
             Choisissez parmi une variété d'options telles que .com, .tech, .store et bien d'autres. Créez une identité
             numérique forte dès aujourd'hui.
           </p>
         </div>
-        <div class="lg:flex justify-between items-center py-5 lg:px-40 lg:space-y-0 space-y-2">
+        <div class="lg:flex justify-between items-center py-5 px-5 lg:px-40 lg:space-y-0 space-y-2">
           <div class="flex items-center space-x-2">
             <div class="border p-1 outline-none border-blue-900" >
               <input type="search"class="bg-transparent outline-none"  v-model="searchQuery" placeholder="Rechercher un domaine" />
@@ -24,7 +24,7 @@
         </div>
       </div>
   
-      <div class="flex justify-center lg:px-40">
+      <div class="flex justify-center px-5 lg:px-40">
         <div class="flex justify-center items-center w-full">
 
         
