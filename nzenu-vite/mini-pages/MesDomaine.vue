@@ -23,6 +23,7 @@
     >
   </p>
     <div class="space-y-5 p-3 bg-white rounded-md">
+      <button class="bg-blue-400 p-1 text-white hover:bg-blue-500">Commander un Nom de Domaine</button>
 
   <div class="p-5 border border-gray-200 space-y-5">
     <div
@@ -89,55 +90,25 @@
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Nom
+              domaine
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Prénom
+              prix
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Pays
+              expire le:
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              NID
-            </th>
-            <th
-              scope="col"
-              class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
-            >
-              Adresse
-            </th>
-            <th
-              scope="col"
-              class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
-            >
-              Code Postal
-            </th>
-            <th
-              scope="col"
-              class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
-            >
-              Téléphone
-            </th>
-            <th
-              scope="col"
-              class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
-            >
-              Email
-            </th>
-            <th
-              scope="col"
-              class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
-            >
-              Créer le
+              cree le:
             </th>
             <th
               scope="col"

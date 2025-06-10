@@ -4,10 +4,10 @@
             <div class="flex justify-between items-center lg:px-10 px-3 bg-blue-800">
                 <img class="logo" src="../assets/logo_Nzenuhost1_copie_2_4x-8_rnfqnu.png" alt="" />
                 <div class="flex items-center space-x-3">
-                    <div class="items-center space-x-1 lg:block hidden text-white">
+                    <div class="items-center space-x-1 lg:block hidden text-white" @click="toggleDropdown">
                         <span>votre solde:</span><span class="font-bold">0 FCFA</span>
                     </div>
-                    <div class="relative hidden">
+                    <div class="relative hidden " id="dropdownContent">
                         <div class="relative">
                             <div>
                                 <!--[--><span class="inline-flex rounded-md"><button type="button"
@@ -19,7 +19,7 @@
                                                 d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
                                         </svg></button></span><!--]-->
                             </div>
-                            <div style="" class="fixed inset-0 z-40"></div>
+                            <div style="" class="fixed inset-0 transition-all duration-300 ease-in-out  z-40 hidden"></div>
                             <div style="" class="w-48 origin-top-right right-0 absolute z-50 mt-2 rounded-md shadow-lg">
                                 <div class="py-1 bg-white p-5 rounded-md ring-1 ring-black ring-opacity-5">
                                     <!--[-->
@@ -77,8 +77,9 @@
         </nav>
 
         <div class="flex lg:px-40 w-full">
-            <div v-show="!mobile" class="p-5 w-1/6 space-y-5 text-black bg-sky-950 h-screen">
-                <div class="text-white flex space-x-2">
+            <div v-show="!mobile" class="py-5 w-1/6  text-black bg-sky-950 h-screen">
+                <div class="text-white  flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/dashbaord' }" >
+                    
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -92,10 +93,10 @@
                     </div>
                     <div class="col">
                         <router-link to="/dashbaord" class="nav-link text-decoration-none"
-                            active-class="active">Dashbaord</router-link>
+                            >Dashbaord</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2">
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/contact' }" >
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -110,7 +111,7 @@
                             active-class="active">Contact</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2">
+                <div class="text-white flex space-x-2 p-5 " :class="{ 'bg-sky-900': $route.path === '/commande' }"  >
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -123,10 +124,10 @@
                         </svg>
                     </div>
                     <div class="">
-                        <router-link to="commande">Commandes</router-link>
+                        <router-link to="/commande">Commandes</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2">
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/domaine' }" >
                     <div class="col-2">
                         <svg width="2em" height="1.3em" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -141,7 +142,7 @@
                             domaine</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2">
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/hebergement' }" >
                     <div class=" col-1">
                     <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon w-5 h-5"
@@ -161,7 +162,7 @@
                         >Hebergement Web</router-link>
                 </div>
             </div>
-            <div class="text-white flex space-x-2">
+            <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/ssl' }" >
                 <div class="col-1">
                     <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon w-5 h-5"
@@ -172,11 +173,11 @@
                     </svg>
                 </div>
                 <div class="col">
-                    <router-link to="ssl" class="nav-link text-decoration-none" active-class="active">Certificate
+                    <router-link to="/ssl" class="nav-link text-decoration-none" active-class="active">Certificate
                         SSL</router-link>
                 </div>
             </div>
-            <div class="text-white flex space-x-2">
+            <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/emailpro' }" >
                 <div class="col-1">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -191,11 +192,11 @@
                     </svg>
                 </div>
                 <div class="col">
-                    <router-link to="email pro" class="nav-link text-decoration-none" active-class="active">Email
+                    <router-link to="/emailpro" class="nav-link text-decoration-none" active-class="active">Email
                         Pro</router-link>
                 </div>
             </div>
-            <div class="text-white flex space-x-2">
+            <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/renouvellement' }" >
                 <div class="col-1">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -232,8 +233,8 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="/dashbaord" class="nav-link text-decoration-none"
-                            active-class="active">Dashbaord</router-link>
+                        <router-link to="/dashbaord" class="nav-link text-decoration-none active:bg-gray-200 "
+                          active-class="bg-red-600 text-white" exact  >Dashbaord</router-link>
                     </div>
                 </li>
                 <li class="text-white flex space-x-2">
@@ -397,6 +398,11 @@ export default {
             }
             this.scrollNav = false;
         },
+        toggleDropdown() {
+            const dropdown = document.getElementById('dropdownContent');
+            dropdown.classList.toggle('hidden');
+        }
+
     },
 };
 </script>

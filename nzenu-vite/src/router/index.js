@@ -45,7 +45,7 @@ const routes = [
       { path: '/commande',component:MesCommande},
       { path: '/domaine',component:MesDomaine},
       { path:'/ssl',component:MiniSsl},
-      { path: '/email pro',component:EmailPro},
+      { path: '/emailpro',component:EmailPro},
       { path: '/hebergement',component:HebergementWeb},
       { path: '/renouvellement',component:RenouVellement}
 
