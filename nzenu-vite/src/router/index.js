@@ -1,7 +1,7 @@
 
 
 import { createRouter, createWebHistory } from 'vue-router'
-
+import ProFil from '../../mini-pages/ProFil.vue'
 import HomePage from '@/pages/HomePage.vue'
 import TransFerrer from '../pages/TransFerrer.vue'
 import MutuaLiser from '../pages/MutuaLiser.vue'
@@ -47,14 +47,13 @@ const routes = [
       { path:'/ssl',component:MiniSsl},
       { path: '/emailpro',component:EmailPro},
       { path: '/hebergement',component:HebergementWeb},
-      { path: '/renouvellement',component:RenouVellement}
+      { path: '/renouvellement',component:RenouVellement},
+      { path: '/profil', component: ProFil }
 
     ]
   },
-  
-  
-  
-  
+
+
 
 ]
 
