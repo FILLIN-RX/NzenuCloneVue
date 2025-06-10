@@ -88,56 +88,45 @@
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Nom
+              Reference
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Prénom
+              montant(fcfa)
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Pays
+              type
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              NID
+              contact
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Adresse
+              remise
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Code Postal
+              payement method
             </th>
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
             >
-              Téléphone
+              status
             </th>
-            <th
-              scope="col"
-              class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
-            >
-              Email
-            </th>
-            <th
-              scope="col"
-              class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"
-            >
-              Créer le
-            </th>
+          
             <th
               scope="col"
               class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider px-6 py-3"

@@ -1,6 +1,6 @@
 <template>
   <nav :class="{ 'scrolled-nav': scrollNav }" class="fixed w-full">
-    <div class="lg:px-40 flex md:h-20 h-15 justify-between bg-blue-900 space-y-3    index-90 text-white sm:px-5">
+    <div class="lg:px-40 flex md:h-20 h-15 justify-between bg-blue-900 space-y-3  py-4   index-90 text-white sm:px-5">
         
             <div class="flex py-5 space-y-5">
                 <div class="items-center flex justify-center">
@@ -14,9 +14,17 @@
                 </div>
                 <div class="items-center flex justify-center">
                     <div class="">
-                    <div class="col">
+                    <div class="flex items-center space-x-2">
                         <p v-if="!mobile">Avis client</p>
+                   
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-yellow-500 w-5 h-5" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-yellow-500 w-5 h-5" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-yellow-500 w-5 h-5" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-yellow-500 w-5 h-5" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-yellow-500 w-5 h-5" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"></path></svg>
                     </div>
+                     </div>
                     <div class=" ">
                         <p>L'hébergement web accessible à tous</p>
                     </div>
@@ -69,15 +77,8 @@
           </div>
         </div>
       </div>
-      <div class=" items-center flex justify-center" v-show="mobile">
-                <img
-                @click="toggleMobileNav"
-                :class="{ 'icon-active': mobileNav }"
-                class="w-10"
-                src="../assets/8604bcf1-d9e9-4924-ab99-89e8a04d5de4.svg"
-                alt=""
-                />
-            </div>
+      <span class="i-heroicons-x-mark-20-solid flex-shrink-0 h-5 w-5" aria-hidden="true"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" @click="toggleMobileNav" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon w-8 h-8 cursor-pointer outline-none border p-1 rounded" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-c3ad5561=""><path fill="currentColor" d="M4 7q-.425 0-.712-.288T3 6t.288-.712T4 5h16q.425 0 .713.288T21 6t-.288.713T20 7zm0 12q-.425 0-.712-.288T3 18t.288-.712T4 17h16q.425 0 .713.288T21 18t-.288.713T20 19zm0-6q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13z"></path></svg>
     </div>
 
     <div class="bg-white">
@@ -147,7 +148,14 @@
       </ul>
     </div>
     <transition name="mobile-nav">
-      <ul v-show="mobileNav" class="dropdown">
+      
+      <ul v-show="mobileNav" class="dropdown space-y-3">
+        <span
+          class="i-heroicons-x-mark-20-solid flex-shrink-0 h-5 w-5 cursor-pointer"
+          @click="toggleMobileNav"
+          aria-hidden="true"
+        ></span>
+        <li class="bg-blue-900 w-full p-6 text-white">NzenuHost</li>
         <li>
           <router-link class="nav-link" to="/enregistrer"
             >Enregistrer un nom de domaine</router-link
@@ -269,7 +277,7 @@ export default {
     width: 100%;
     max-width: 250px;
     height: 100%;
-    padding-left: 30px;
+    
     background-color: white;
     top: 0;
     left: 0;
