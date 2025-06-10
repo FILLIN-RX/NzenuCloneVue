@@ -130,8 +130,8 @@
             </th>
           </tr>
         </thead>
-        <tbody class="dt__table__tbody">
-          <tr class="dt__table__row dt-bg-white">
+        <tbody class="table tbody">
+          <tr class="table row bg-white">
             <tablebodycell colspan="2"
               >Aucun enregistrement disponible</tablebodycell
             >

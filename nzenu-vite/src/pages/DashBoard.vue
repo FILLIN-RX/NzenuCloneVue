@@ -4,14 +4,15 @@
             <div class="flex justify-between items-center lg:px-10 px-3 bg-blue-800">
                 <img class="logo" src="../assets/logo_Nzenuhost1_copie_2_4x-8_rnfqnu.png" alt="" />
                 <div class="flex items-center space-x-3">
-                    <div class="items-center space-x-1 lg:block hidden text-white" @click="toggleDropdown">
+                    <div class="items-center space-x-1 lg:block hidden text-white">
                         <span>votre solde:</span><span class="font-bold">0 FCFA</span>
                     </div>
-                    <div class="relative hidden " id="dropdownContent">
+                    <div class="relative">
                         <div class="relative">
                             <div>
                                 <!--[--><span class="inline-flex rounded-md"><button type="button"
-                                        class="inline-flex items-center px-1 py-1 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition ease-in-out duration-150">
+                                        class="inline-flex items-center px-1 py-1 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition ease-in-out duration-150"
+                                        @click="toggleDropdown">
                                         <span class="uppercase">fillin flow</span><svg
                                             class="ml-2 -mr-0.5 h-5 w-5 font-bold text-red-800" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -19,15 +20,16 @@
                                                 d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
                                         </svg></button></span><!--]-->
                             </div>
-                            <div style="" class="fixed inset-0 transition-all duration-300 ease-in-out  z-40 hidden"></div>
-                            <div style="" class="w-48 origin-top-right right-0 absolute z-50 mt-2 rounded-md shadow-lg">
+                            <div style="" class="fixed inset-0 z-40"></div>
+                            <div style=""
+                                class="w-48 origin-top-right right-0 absolute z-50 mt-2 transition-all duration-300 ease-in-out rounded-md shadow-lg"
+                                v-if="isOpen">
                                 <div class="py-1 bg-white p-5 rounded-md ring-1 ring-black ring-opacity-5">
                                     <!--[-->
                                     <div class="block px-2 py-2 text-xs text-gray-400">
                                         Gérer mon compte
                                     </div>
-                                    <div
-                                        class="px-2  flex items-center py-2 hover:bg-gray-200 cursor-pointer space-x-2">
+                                    <div class="px-2 flex items-center py-2 hover:bg-gray-200 cursor-pointer space-x-2">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
                                             class="icon block" style="" width="1em" height="1em" viewBox="0 0 14 14"
@@ -53,7 +55,7 @@
                                             </path>
                                         </svg><button>Profile</button></a>
                                     <div class="border-t border-gray-200"></div>
-                                    <div class=" flex items-center py-2 hover:bg-gray-200 cursor-pointer space-x-2">
+                                    <div class="flex items-center py-2 hover:bg-gray-200 cursor-pointer space-x-2">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
                                             class="icon h-5 w-5" style="" width="1em" height="1em" viewBox="0 0 24 24"
@@ -77,9 +79,8 @@
         </nav>
 
         <div class="flex lg:px-40 w-full">
-            <div v-show="!mobile" class="py-5 w-1/6  text-black bg-sky-950 h-screen">
-                <div class="text-white  flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/dashbaord' }" >
-                    
+            <div v-show="!mobile" class="py-5 w-1/6 text-black bg-sky-950 h-screen">
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/dashbaord' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -92,11 +93,10 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="/dashbaord" class="nav-link text-decoration-none"
-                            >Dashbaord</router-link>
+                        <router-link to="/dashbaord" class="nav-link text-decoration-none">Dashbaord</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/contact' }" >
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/contact' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -111,7 +111,7 @@
                             active-class="active">Contact</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2 p-5 " :class="{ 'bg-sky-900': $route.path === '/commande' }"  >
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/commande' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
@@ -124,10 +124,11 @@
                         </svg>
                     </div>
                     <div class="">
-                        <router-link to="/commande">Commandes</router-link>
+                        <router-link to="/commande" class="nav-link text-decoration-none"
+                            active-class="active">Commandes</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/domaine' }" >
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/domaine' }">
                     <div class="col-2">
                         <svg width="2em" height="1.3em" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -138,85 +139,84 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="domaine" class="nav-link text-decoration-none" active-class="active">Nom de
+                        <router-link to="/domaine" class="nav-link text-decoration-none" active-class="active">Nom de
                             domaine</router-link>
                     </div>
                 </div>
-                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/hebergement' }" >
-                    <div class=" col-1">
-                    <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon w-5 h-5"
-                        data-v-5eaad1d1="" style="" viewBox="0 0 24 24" data-v-c3ad5561="">
-                        <g fill="none">
-                            <path stroke="currentColor" stroke-width="1.5"
-                                d="M2 18c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 15 4.068 15 5 15h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 16.602 22 17.068 22 18s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 21 19.932 21 19 21H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 19.398 2 18.932 2 18Zm0-6c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 9 4.068 9 5 9h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 10.602 22 11.068 22 12s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 15 19.932 15 19 15H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 13.398 2 12.932 2 12Zm0-6c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 3 4.068 3 5 3h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 4.602 22 5.068 22 6s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 9 19.932 9 19 9H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 7.398 2 6.932 2 6Z">
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/hebergement' }">
+                    <div class="col-1">
+                        <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                            class="icon w-5 h-5" data-v-5eaad1d1="" style="" viewBox="0 0 24 24" data-v-c3ad5561="">
+                            <g fill="none">
+                                <path stroke="currentColor" stroke-width="1.5"
+                                    d="M2 18c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 15 4.068 15 5 15h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 16.602 22 17.068 22 18s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 21 19.932 21 19 21H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 19.398 2 18.932 2 18Zm0-6c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 9 4.068 9 5 9h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 10.602 22 11.068 22 12s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 15 19.932 15 19 15H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 13.398 2 12.932 2 12Zm0-6c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 3 4.068 3 5 3h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 4.602 22 5.068 22 6s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 9 19.932 9 19 9H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 7.398 2 6.932 2 6Z">
+                                </path>
+                                <circle cx="5" cy="12" r="1" fill="currentColor" opacity=".5"></circle>
+                                <circle cx="5" cy="6" r="1" fill="currentColor" opacity=".5"></circle>
+                                <circle cx="5" cy="18" r="1" fill="currentColor" opacity=".5"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <router-link to="/hebergement" class="nav-link text-decoration-none"
+                            active-class="active">Hebergement Web</router-link>
+                    </div>
+                </div>
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/ssl' }">
+                    <div class="col-1">
+                        <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                            class="icon w-5 h-5" data-v-5eaad1d1="" style="" viewBox="0 0 496 512" data-v-c3ad5561="">
+                            <path fill="currentColor"
+                                d="M248 43.4C130.6 43.4 35.4 138.6 35.4 256S130.6 468.6 248 468.6S460.6 373.4 460.6 256S365.4 43.4 248 43.4m-97.4 132.9c0-53.7 43.7-97.4 97.4-97.4s97.4 43.7 97.4 97.4v26.6c0 5-3.9 8.9-8.9 8.9h-17.7c-5 0-8.9-3.9-8.9-8.9v-26.6c0-82.1-124-82.1-124 0v26.6c0 5-3.9 8.9-8.9 8.9h-17.7c-5 0-8.9-3.9-8.9-8.9v-26.6zM389.7 380c0 9.7-8 17.7-17.7 17.7H124c-9.7 0-17.7-8-17.7-17.7V238.3c0-9.7 8-17.7 17.7-17.7h248c9.7 0 17.7 8 17.7 17.7zm-248-137.3v132.9c0 2.5-1.9 4.4-4.4 4.4h-8.9c-2.5 0-4.4-1.9-4.4-4.4V242.7c0-2.5 1.9-4.4 4.4-4.4h8.9c2.5 0 4.4 1.9 4.4 4.4m141.7 48.7c0 13-7.2 24.4-17.7 30.4v31.6c0 5-3.9 8.9-8.9 8.9h-17.7c-5 0-8.9-3.9-8.9-8.9v-31.6c-10.5-6.1-17.7-17.4-17.7-30.4c0-19.7 15.8-35.4 35.4-35.4s35.5 15.8 35.5 35.4M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8m0 478.3C121 486.3 17.7 383 17.7 256S121 25.7 248 25.7S478.3 129 478.3 256S375 486.3 248 486.3">
                             </path>
-                            <circle cx="5" cy="12" r="1" fill="currentColor" opacity=".5"></circle>
-                            <circle cx="5" cy="6" r="1" fill="currentColor" opacity=".5"></circle>
-                            <circle cx="5" cy="18" r="1" fill="currentColor" opacity=".5"></circle>
-                        </g>
-                    </svg>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <router-link to="/ssl" class="nav-link text-decoration-none" active-class="active">Certificate
+                            SSL</router-link>
+                    </div>
                 </div>
-                <div class="col">
-                    <router-link to='/hebergement' class="nav-link text-decoration-none"
-                        >Hebergement Web</router-link>
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/emailpro' }">
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
+                            height="1em" viewBox="0 0 512 512" data-v-c3ad5561="">
+                            <circle cx="432" cy="160" r="64" fill="currentColor"></circle>
+                            <path
+                                d="M225 160H33.799c-11.1 0-13.898 3-11.299 10.5 1.5 4.4 8.4 8.1 12.5 10.2 11 5.8 163.799 89.1 169.5 92.1 5.699 3 11.5 4.4 20.5 4.4s14.799-1.4 20.5-4.4c3.79-1.995 72.625-39.497 121.559-66.107C357.594 193.551 352 177.433 352 160H225z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M293.199 273.3l82.201 92.5c2 2 2.898 4.4 1.799 5.601-1.199 1.1-3.799.5-5.9-1.4l-98.6-83.2c-14.9 9.601-25.4 16.2-27.199 17.2-7.701 3.9-13.1 4.4-20.5 4.4s-12.801-.5-20.5-4.4c-1.9-1-12.301-7.6-27.201-17.2l-98.6 83.2c-2 2-4.699 2.6-5.9 1.4C71.6 370.3 72.5 367.8 74.5 365.8l82.1-92.5c-48.7-31.5-123.1-83.9-131.301-88.1C16.5 180.7 16 186 16 190.1v205c0 9.3 13.699 20.9 23.5 20.9h371c9.799 0 21.5-11.7 21.5-20.9V240c-21.726 0-41.416-8.673-55.832-22.729-26.001 17.902-57.808 39.754-82.969 56.029z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <router-link to="/emailpro" class="nav-link text-decoration-none" active-class="active">Email
+                            Pro</router-link>
+                    </div>
                 </div>
-            </div>
-            <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/ssl' }" >
-                <div class="col-1">
-                    <svg width="25" height="35" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon w-5 h-5"
-                        data-v-5eaad1d1="" style="" viewBox="0 0 496 512" data-v-c3ad5561="">
-                        <path fill="currentColor"
-                            d="M248 43.4C130.6 43.4 35.4 138.6 35.4 256S130.6 468.6 248 468.6S460.6 373.4 460.6 256S365.4 43.4 248 43.4m-97.4 132.9c0-53.7 43.7-97.4 97.4-97.4s97.4 43.7 97.4 97.4v26.6c0 5-3.9 8.9-8.9 8.9h-17.7c-5 0-8.9-3.9-8.9-8.9v-26.6c0-82.1-124-82.1-124 0v26.6c0 5-3.9 8.9-8.9 8.9h-17.7c-5 0-8.9-3.9-8.9-8.9v-26.6zM389.7 380c0 9.7-8 17.7-17.7 17.7H124c-9.7 0-17.7-8-17.7-17.7V238.3c0-9.7 8-17.7 17.7-17.7h248c9.7 0 17.7 8 17.7 17.7zm-248-137.3v132.9c0 2.5-1.9 4.4-4.4 4.4h-8.9c-2.5 0-4.4-1.9-4.4-4.4V242.7c0-2.5 1.9-4.4 4.4-4.4h8.9c2.5 0 4.4 1.9 4.4 4.4m141.7 48.7c0 13-7.2 24.4-17.7 30.4v31.6c0 5-3.9 8.9-8.9 8.9h-17.7c-5 0-8.9-3.9-8.9-8.9v-31.6c-10.5-6.1-17.7-17.4-17.7-30.4c0-19.7 15.8-35.4 35.4-35.4s35.5 15.8 35.5 35.4M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8m0 478.3C121 486.3 17.7 383 17.7 256S121 25.7 248 25.7S478.3 129 478.3 256S375 486.3 248 486.3">
-                        </path>
-                    </svg>
-                </div>
-                <div class="col">
-                    <router-link to="/ssl" class="nav-link text-decoration-none" active-class="active">Certificate
-                        SSL</router-link>
-                </div>
-            </div>
-            <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/emailpro' }" >
-                <div class="col-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
-                        height="1em" viewBox="0 0 512 512" data-v-c3ad5561="">
-                        <circle cx="432" cy="160" r="64" fill="currentColor"></circle>
-                        <path
-                            d="M225 160H33.799c-11.1 0-13.898 3-11.299 10.5 1.5 4.4 8.4 8.1 12.5 10.2 11 5.8 163.799 89.1 169.5 92.1 5.699 3 11.5 4.4 20.5 4.4s14.799-1.4 20.5-4.4c3.79-1.995 72.625-39.497 121.559-66.107C357.594 193.551 352 177.433 352 160H225z"
-                            fill="currentColor"></path>
-                        <path
-                            d="M293.199 273.3l82.201 92.5c2 2 2.898 4.4 1.799 5.601-1.199 1.1-3.799.5-5.9-1.4l-98.6-83.2c-14.9 9.601-25.4 16.2-27.199 17.2-7.701 3.9-13.1 4.4-20.5 4.4s-12.801-.5-20.5-4.4c-1.9-1-12.301-7.6-27.201-17.2l-98.6 83.2c-2 2-4.699 2.6-5.9 1.4C71.6 370.3 72.5 367.8 74.5 365.8l82.1-92.5c-48.7-31.5-123.1-83.9-131.301-88.1C16.5 180.7 16 186 16 190.1v205c0 9.3 13.699 20.9 23.5 20.9h371c9.799 0 21.5-11.7 21.5-20.9V240c-21.726 0-41.416-8.673-55.832-22.729-26.001 17.902-57.808 39.754-82.969 56.029z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <div class="col">
-                    <router-link to="/emailpro" class="nav-link text-decoration-none" active-class="active">Email
-                        Pro</router-link>
+                <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/renouvellement' }">
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
+                            height="1em" viewBox="0 0 24 24" data-v-c3ad5561="">
+                            <path fill="currentColor"
+                                d="M6 12.05q0 .4.05.788t.175.762q.125.425-.025.813t-.525.562q-.4.2-.787.038t-.513-.588q-.2-.575-.288-1.175T4 12.05q0-3.35 2.325-5.7T12 4h.175l-.9-.9Q11 2.825 11 2.4t.275-.7t.7-.275t.7.275l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.7.275t-.7-.275T11 7.6t.275-.7l.9-.9H12Q9.5 6 7.75 7.763T6 12.05m12-.1q0-.4-.05-.787t-.175-.763q-.125-.425.025-.812t.525-.563q.4-.2.787-.037t.513.587q.2.575.288 1.175t.087 1.2q0 3.35-2.325 5.7T12 20h-.175l.9.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.6-2.6q-.3-.3-.3-.7t.3-.7l2.6-2.6q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.9.9H12q2.5 0 4.25-1.762T18 11.95">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <router-link to="/renouvellement" class="nav-link text-decoration-none"
+                            active-class="active">renouvellement</router-link>
+                    </div>
                 </div>
             </div>
-            <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/renouvellement' }" >
-                <div class="col-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
-                        height="1em" viewBox="0 0 24 24" data-v-c3ad5561="">
-                        <path fill="currentColor"
-                            d="M6 12.05q0 .4.05.788t.175.762q.125.425-.025.813t-.525.562q-.4.2-.787.038t-.513-.588q-.2-.575-.288-1.175T4 12.05q0-3.35 2.325-5.7T12 4h.175l-.9-.9Q11 2.825 11 2.4t.275-.7t.7-.275t.7.275l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.7.275t-.7-.275T11 7.6t.275-.7l.9-.9H12Q9.5 6 7.75 7.763T6 12.05m12-.1q0-.4-.05-.787t-.175-.763q-.125-.425.025-.812t.525-.563q.4-.2.787-.037t.513.587q.2.575.288 1.175t.087 1.2q0 3.35-2.325 5.7T12 20h-.175l.9.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.6-2.6q-.3-.3-.3-.7t.3-.7l2.6-2.6q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.9.9H12q2.5 0 4.25-1.762T18 11.95">
-                        </path>
-                    </svg>
-                </div>
-                <div class="col">
-                    <router-link to="/renouvellement"
-                        >renouvellement</router-link>
-                </div>
-            </div>
-        </div>
-        
 
-        <div class="lg:w-5/6 w-full">
-            <router-view />
-        </div>
+            <div class="lg:w-5/6 w-full">
+                <router-view />
+            </div>
         </div>
         <transition name="mobile-nav">
             <ul v-show="mobileNav" class="dropdown pt-20">
@@ -233,8 +233,8 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="/dashbaord" class="nav-link text-decoration-none active:bg-gray-200 "
-                          active-class="bg-red-600 text-white" exact  >Dashbaord</router-link>
+                        <router-link to="/dashbaord" class="nav-link text-decoration-none active:bg-gray-200"
+                            active-class="bg-red-600 text-white" exact>Dashbaord</router-link>
                     </div>
                 </li>
                 <li class="text-white flex space-x-2">
@@ -243,9 +243,8 @@
                             aria-hidden="true" role="img" class="icon w-5 h-5" data-v-b2bd2a7f="" style="" width="1em"
                             height="1em" viewBox="0 0 24 24" data-v-c3ad5561="">
                             <path fill="currentColor"
-                                d="M17.5 4.5c-1.95 0-4.05.4-5.5 1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .65.73.45.75.45C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5c1.35-.85 3.8-1.5 5.5-1.5c1.65 0 3.35.3 4.75 1.05c.41.21.75-.19.75-.45V6c-1.49-1.12-3.63-1.5-5.5-1.5m3.5 14c-1.1-.35-2.3-.5-3.5-.5c-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5c1.2 0 2.4.15 3.5.5z">
-                            </path>
-                        </svg>
+                                d="M17.5 4.5c-1.95 0-4.05.4-5.5 1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .65.73.45.75.45C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5c1.35-.85 3.8-1.5 5.5-1.5c1.65 0 3.35.3 4.75 1.05c.41.21.75-.19.75-.45V6c-1.49-1.12-3.63-1.5-5.5-1.5m3.5 14c-1.1-.35-2.3-.5-3.5-.5c-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5c1.2 0 2.4.15 3.5.5z"/>
+                            </svg>
                     </div>
                     <div class="col">
                         <router-link to="/contact" class="nav-link text-decoration-none"
@@ -265,7 +264,7 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="commande" class="nav-link text-decoration-none"
+                        <router-link to="/commande" class="nav-link text-decoration-none"
                             active-class="active">Commandes</router-link>
                     </div>
                 </li>
@@ -280,7 +279,7 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="domaine" class="nav-link text-decoration-none" active-class="active">Nom de
+                        <router-link to="/domaine" class="nav-link text-decoration-none" active-class="active">Nom de
                             domaine</router-link>
                     </div>
                 </li>
@@ -300,7 +299,7 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="hebergement" class="nav-link text-decoration-none"
+                        <router-link to="/hebergement" class="nav-link text-decoration-none"
                             active-class="active">Hebergement Web</router-link>
                     </div>
                 </li>
@@ -315,7 +314,7 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="ssl" class="nav-link text-decoration-none" active-class="active">Certificate
+                        <router-link to="/ssl" class="nav-link text-decoration-none" active-class="active">Certificate
                             SSL</router-link>
                     </div>
                 </li>
@@ -334,7 +333,7 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="email pro" class="nav-link text-decoration-none" active-class="active">Email
+                        <router-link to="/emailpro" class="nav-link text-decoration-none" active-class="active">Email
                             Pro</router-link>
                     </div>
                 </li>
@@ -349,14 +348,13 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="renouvellement" class="nav-link text-decoration-none"
+                        <router-link to="/renouvellement" class="nav-link text-decoration-none"
                             active-class="active">renouvellement</router-link>
                     </div>
                 </li>
             </ul>
         </transition>
     </div>
-    
 </template>
 <script>
 export default {
@@ -366,6 +364,7 @@ export default {
             mobile: null,
             mobileNav: null,
             WindowWidth: null,
+            isOpen: false,
         };
     },
     created() {
@@ -399,10 +398,10 @@ export default {
             this.scrollNav = false;
         },
         toggleDropdown() {
-            const dropdown = document.getElementById('dropdownContent');
-            dropdown.classList.toggle('hidden');
-        }
+            console.log("toggleDropdown called");
 
+            this.isOpen = !this.isOpen;
+        },
     },
 };
 </script>
@@ -431,16 +430,11 @@ export default {
     max-width: 250px;
     height: 100%;
     padding-left: 30px;
-    background-color: #082F49;
+    background-color: #082f49;
     top: 0;
     left: 0;
     transition: 500ms ease all;
-
-
 }
-
-
-
 
 nav img {
     width: 65px;
