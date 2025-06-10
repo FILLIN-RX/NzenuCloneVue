@@ -13,9 +13,7 @@
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
                                         class="inline-flex items-center px-1 py-1 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition ease-in-out duration-150"
-                                        @click="toggleDropdown"
-                                        aria-expanded="isOpen"
-                                        aria-label="User menu">
+                                        @click="toggleDropdown" aria-expanded="isOpen" aria-label="User menu">
                                         <span class="uppercase">fillin flow</span>
                                         <svg class="ml-2 -mr-0.5 h-5 w-5 font-bold text-red-800" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -55,17 +53,17 @@
                                                 d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4">
                                             </path>
                                         </svg><button>Profile</button>
-                                    </router-link>
-                                    <div class="border-t border-gray-200"></div>
-                                    <div class="flex items-center py-2 hover:bg-gray-200 cursor-pointer space-x-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
-                                            class="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 24 24">
-                                            <path fill="currentColor"
-                                                d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12q0-2.1.788-3.912t2.137-3.163l1.4 1.4q-1.1 1.1-1.712 2.55T4 12q0 3.35 2.325 5.675T12 20t5.675-2.325T20 12q0-1.675-.612-3.125t-1.713-2.55l1.4-1.4q1.35 1.35 2.138 3.163T22 12q0 2.075-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m-1-9V2h2v11z">
-                                            </path>
-                                        </svg><button>Fermer la session</button>
-                                    </div>
+                                        </router-link>
+                                        <div class="border-t border-gray-200"></div>
+                                        <div class="flex items-center py-2 hover:bg-gray-200 cursor-pointer space-x-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                                class="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12q0-2.1.788-3.912t2.137-3.163l1.4 1.4q-1.1 1.1-1.712 2.55T4 12q0 3.35 2.325 5.675T12 20t5.675-2.325T20 12q0-1.675-.612-3.125t-1.713-2.55l1.4-1.4q1.35 1.35 2.138 3.163T22 12q0 2.075-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m-1-9V2h2v11z">
+                                                </path>
+                                            </svg><button>Fermer la session</button>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +71,8 @@
                 </div>
                 <div class="icon" v-show="mobile">
                     <img @click="toggleMobileNav" :class="{ 'icon-active': mobileNav }"
-                        src="../assets/8604bcf1-d9e9-4924-ab99-89e8a04d5de4.svg" alt="Menu toggle" aria-label="Toggle menu" />
+                        src="../assets/8604bcf1-d9e9-4924-ab99-89e8a04d5de4.svg" alt="Menu toggle"
+                        aria-label="Toggle menu" />
                 </div>
             </div>
         </nav>
@@ -83,8 +82,8 @@
                 <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/dashboard' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 24 24">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 24 24">
                             <path fill="currentColor" d="M5 5h4v6H5zm10 8h4v6h-4zM5 17h4v2H5zM15 5h4v2h-4z"
                                 opacity=".3"></path>
                             <path fill="currentColor"
@@ -99,8 +98,8 @@
                 <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/contact' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 24 24">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M17.5 4.5c-1.95 0-4.05.4-5.5 1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .65.73.45.75.45C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5c1.35-.85 3.8-1.5 5.5-1.5c1.65 0 3.35.3 4.75 1.05c.41.21.75-.19.75-.45V6c-1.49-1.12-3.63-1.5-5.5-1.5m3.5 14c-1.1-.35-2.3-.5-3.5-.5c-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5c1.2 0 2.4.15 3.5.5z">
                             </path>
@@ -113,8 +112,8 @@
                 <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/commande' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 48 48">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 48 48">
                             <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
                                 <path fill="currentColor" stroke-linecap="round"
                                     d="m4 24l8.571 18L24 29zm40 0l-8.571 18L24 29zM13 42h22L24 29z"></path>
@@ -156,7 +155,8 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="/hebergement" class="nav-link text-decoration-none">Hebergement Web</router-link>
+                        <router-link to="/hebergement" class="nav-link text-decoration-none">Hebergement
+                            Web</router-link>
                     </div>
                 </div>
                 <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/ssl' }">
@@ -176,8 +176,8 @@
                 <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/emailpro' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 512 512">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 512 512">
                             <circle cx="432" cy="160" r="64" fill="currentColor"></circle>
                             <path
                                 d="M225 160H33.799c-11.1 0-13.898 3-11.299 10.5 1.5 4.4 8.4 8.1 12.5 10.2 11 5.8 163.799 89.1 169.5 92.1 5.699 3 11.5 4.4 20.5 4.4s14.799-1.4 20.5-4.4c3.79-1.995 72.625-39.497 121.559-66.107C357.594 193.551 352 177.433 352 160H225z"
@@ -194,21 +194,24 @@
                 <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/renouvellement' }">
                     <div class="col-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 24 24">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M6 12.05q0 .4.05.788t.175.762q.125.425-.025.813t-.525.562q-.4.2-.787.038t-.513-.588q-.2-.575-.288-1.175T4 12.05q0-3.35 2.325-5.7T12 4h.175l-.9-.9Q11 2.825 11 2.4t.275-.7t.7-.275t.7.275l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.7.275t-.7-.275T11 7.6t.275-.7l.9-.9H12Q9.5 6 7.75 7.763T6 12.05m12-.1q0-.4-.05-.787t-.175-.763q-.125-.425.025-.812t.525-.563q.4-.2.787-.037t.513.587q.2.575.288 1.175t.087 1.2q0 3.35-2.325 5.7T12 20h-.175l.9.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.6-2.6q-.3-.3-.3-.7t.3-.7l2.6-2.6q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.9.9H12q2.5 0 4.25-1.762T18 11.95">
                             </path>
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="/renouvellement" class="nav-link text-decoration-none">Renouvellement</router-link>
+                        <router-link to="/renouvellement"
+                            class="nav-link text-decoration-none">Renouvellement</router-link>
                     </div>
                 </div>
             </div>
 
             <div class="lg:w-5/6 w-full">
-                <router-view />
+                <transition name="delayed-fade" appear>
+                    <router-view />
+                </transition>
             </div>
         </div>
         <transition name="mobile-nav">
@@ -216,8 +219,8 @@
                 <li class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/dashboard' }">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 24 24">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 24 24">
                             <path fill="currentColor" d="M5 5h4v6H5zm10 8h4v6h-4zM5 17h4v2H5zM15 5h4v2h-4z"
                                 opacity=".3"></path>
                             <path fill="currentColor"
@@ -232,8 +235,8 @@
                 <li class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/contact' }">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 24 24">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M17.5 4.5c-1.95 0-4.05.4-5.5 1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .65.73.45.75.45C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5c1.35-.85 3.8-1.5 5.5-1.5c1.65 0 3.35.3 4.75 1.05c.41.21.75-.19.75-.45V6c-1.49-1.12-3.63-1.5-5.5-1.5m3.5 14c-1.1-.35-2.3-.5-3.5-.5c-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5c1.2 0 2.4.15 3.5.5z">
                             </path>
@@ -246,8 +249,8 @@
                 <li class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/commande' }">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 48 48">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 48 48">
                             <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
                                 <path fill="currentColor" stroke-linecap="round"
                                     d="m4 24l8.571 18L24 29zm40 0l-8.571 18L24 29zM13 42h22L24 29z"></path>
@@ -289,7 +292,8 @@
                         </svg>
                     </div>
                     <div>
-                        <router-link to="/hebergement" class="nav-link text-decoration-none">Hebergement Web</router-link>
+                        <router-link to="/hebergement" class="nav-link text-decoration-none">Hebergement
+                            Web</router-link>
                     </div>
                 </li>
                 <li class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/ssl' }">
@@ -309,8 +313,8 @@
                 <li class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/emailpro' }">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 512 512">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 512 512">
                             <circle cx="432" cy="160" r="64" fill="currentColor"></circle>
                             <path
                                 d="M225 160H33.799c-11.1 0-13.898 3-11.299 10.5 1.5 4.4 8.4 8.1 12.5 10.2 11 5.8 163.799 89.1 169.5 92.1 5.699 3 11.5 4.4 20.5 4.4s14.799-1.4 20.5-4.4c3.79-1.995 72.625-39.497 121.559-66.107C357.594 193.551 352 177.433 352 160H225z"
@@ -327,15 +331,16 @@
                 <li class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/renouvellement' }">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em"
-                            height="1em" viewBox="0 0 24 24">
+                            aria-hidden="true" role="img" class="icon w-5 h-5" width="1em" height="1em"
+                            viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M6 12.05q0 .4.05.788t.175.762q.125.425-.025.813t-.525.562q-.4.2-.787.038t-.513-.588q-.2-.575-.288-1.175T4 12.05q0-3.35 2.325-5.7T12 4h.175l-.9-.9Q11 2.825 11 2.4t.275-.7t.7-.275t.7.275l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.7.275t-.7-.275T11 7.6t.275-.7l.9-.9H12Q9.5 6 7.75 7.763T6 12.05m12-.1q0-.4-.05-.787t-.175-.763q-.125-.425.025-.812t.525-.563q.4-.2.787-.037t.513.587q.2.575.288 1.175t.087 1.2q0 3.35-2.325 5.7T12 20h-.175l.9.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.6-2.6q-.3-.3-.3-.7t.3-.7l2.6-2.6q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.9.9H12q2.5 0 4.25-1.762T18 11.95">
                             </path>
                         </svg>
                     </div>
                     <div>
-                        <router-link to="/renouvellement" class="nav-link text-decoration-none">Renouvellement</router-link>
+                        <router-link to="/renouvellement"
+                            class="nav-link text-decoration-none">Renouvellement</router-link>
                     </div>
                 </li>
             </ul>
@@ -395,6 +400,14 @@ export default {
 </script>
 
 <style scoped>
+.delayed-fade-enter-active {
+    transition: opacity 0.6s ease 0.3s;
+}
+
+.delayed-fade-enter-from {
+    opacity: 0;
+}
+
 .mobile-nav-enter-active,
 .mobile-nav-leave-active {
     transition: transform 0.3s ease;

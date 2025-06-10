@@ -1,63 +1,55 @@
 <template>
-  <div class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
-    <!-- Section En-tête du profil -->
+  <div class="max-w-xl mx-auto p-6 bg-white rounded-lg">
+    <!-- En-tête FF -->
     <div class="mb-8">
-      <div class="flex items-center space-x-4 mb-4">
-        <div class="text-2xl font-bold text-blue-800">FF</div>
-        <div>
-          <h1 class="text-xl font-semibold">fillin flow</h1>
-          <p class="text-gray-600">djeutchouruxel@gmail.com</p>
-          <p class="text-sm text-gray-500">Client depuis le 20/04/2025</p>
-        </div>
-      </div>
-
-      <div class="flex items-center space-x-2 text-green-600 mb-4">
+      <h1 class="text-3xl font-bold mb-2">FF</h1>
+      <p class="text-lg font-medium">fillin flow</p>
+      <p class="text-gray-600">djeutchouruxel@gmail.com</p>
+      <p class="text-sm text-gray-500 mt-1">Client depuis le 20/04/2025</p>
+      
+      <div class="flex items-center mt-3 text-green-600">
         <span>Email vérifiée 😊</span>
       </div>
-
-      <div class="flex space-x-4">
-        <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">
-          Cliquer pour vérifier mon Email
-        </button>
-        <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">
-          J'ai le code de vérification
-        </button>
+      
+      <div class="flex space-x-4 mt-2">
+        <button class="text-blue-600 text-sm underline">Cliquer pour vérifier mon Email</button>
+        <button class="text-blue-600 text-sm underline">J'ai le code de vérification</button>
       </div>
     </div>
 
-    <!-- Section Profil -->
+    <!-- Section Profile -->
     <div class="mb-8">
-      <h2 class="text-lg font-bold mb-4 border-b pb-2">Profile</h2>
+      <h2 class="text-xl font-bold mb-4">Profile</h2>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+      <div class="grid grid-cols-2 gap-4 mb-3">
         <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Prénom</label>
-          <div class="p-2 bg-gray-100 rounded">fillin</div>
+          <p class="text-gray-500 text-sm">Prénom</p>
+          <p class="font-medium">fillin</p>
         </div>
         <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Nom de famille</label>
-          <div class="p-2 bg-gray-100 rounded">flow</div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Email</label>
-          <div class="p-2 bg-gray-100 rounded">djeutchouruxel@gmail.com</div>
-        </div>
-        <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Téléphone</label>
-          <div class="p-2 bg-gray-100 rounded">Téléphone</div>
+          <p class="text-gray-500 text-sm">Nom de famille</p>
+          <p class="font-medium">flow</p>
         </div>
       </div>
-
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-medium mb-1">Mot de passe</label>
-        <div class="p-2 bg-gray-100 rounded">Fillin2378</div>
+      
+      <div class="grid grid-cols-2 gap-4 mb-3">
+        <div>
+          <p class="text-gray-500 text-sm">Email</p>
+          <p class="font-medium">djeutchouruxel@gmail.com</p>
+        </div>
+        <div>
+          <p class="text-gray-500 text-sm">Téléphone</p>
+          <p class="font-medium">Téléphone</p>
+        </div>
       </div>
-
-      <div class="flex items-center space-x-2">
-        <input type="checkbox" id="passwordCheck" class="rounded text-blue-600">
+      
+      <div class="mb-3">
+        <p class="text-gray-500 text-sm">Mot de passe</p>
+        <p class="font-medium">Fillin2378</p>
+      </div>
+      
+      <div class="flex items-center mt-4">
+        <input type="checkbox" id="passwordCheck" class="mr-2">
         <label for="passwordCheck" class="text-sm text-gray-700">
           Entrer le mot de passe si vous souhaitez modifier.
         </label>
@@ -66,31 +58,31 @@
 
     <!-- Section Autres informations -->
     <div>
-      <h2 class="text-lg font-bold mb-4 border-b pb-2">Autres informations</h2>
+      <h2 class="text-xl font-bold mb-4">Autres informations</h2>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+      <div class="grid grid-cols-2 gap-4 mb-3">
         <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Entreprise</label>
-          <div class="p-2 bg-gray-100 rounded">Entreprise</div>
+          <p class="text-gray-500 text-sm">Entreprise</p>
+          <p class="font-medium">Entreprise</p>
         </div>
         <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Code Postal</label>
-          <div class="p-2 bg-gray-100 rounded">Code Postal</div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Adresse</label>
-          <div class="p-2 bg-gray-100 rounded">Adresse</div>
-        </div>
-        <div>
-          <label class="block text-gray-700 text-sm font-medium mb-1">Ville</label>
-          <div class="p-2 bg-gray-100 rounded">Ville</div>
+          <p class="text-gray-500 text-sm">Code Postal</p>
+          <p class="font-medium">Code Postal</p>
         </div>
       </div>
-
-      <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+      
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <div>
+          <p class="text-gray-500 text-sm">Adresse</p>
+          <p class="font-medium">Adresse</p>
+        </div>
+        <div>
+          <p class="text-gray-500 text-sm">Ville</p>
+          <p class="font-medium">Ville</p>
+        </div>
+      </div>
+      
+      <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
         Mettre à jour
       </button>
     </div>
@@ -99,17 +91,29 @@
 
 <script>
 export default {
-  name: 'UserProfile',
-  // Vous pouvez ajouter des données réactives ici si nécessaire
-  // data() {
-  //   return {
-  //     user: {
-  //       firstName: 'fillin',
-  //       lastName: 'flow',
-  //       email: 'djeutchouruxel@gmail.com',
-  //       // etc...
-  //     }
-  //   }
-  // }
+  name: 'UserProfileExact'
 }
 </script>
+
+<style scoped>
+/* Style spécifique pour correspondre exactement à l'image */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>

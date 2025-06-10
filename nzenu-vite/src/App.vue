@@ -1,7 +1,9 @@
 <template>
    <NavBar v-if="$route.meta.showNavbarAndFooter !== false"  />
   
-  <router-view :key="$route.fullPath" />
+   <transition name="delayed-fade" appear>
+                    <router-view :key="$route.fullPath" />
+                </transition>
 
 
   <WhatzappButton />
@@ -28,7 +30,13 @@ export default {
 <style >
 @import "tailwindcss";
 
+.delayed-fade-enter-active {
+    transition: opacity 0.6s ease 0.3s;
+}
 
+.delayed-fade-enter-from {
+    opacity: 0;
+}
 
 
 
