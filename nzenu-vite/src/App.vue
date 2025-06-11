@@ -1,8 +1,8 @@
 <template>
    <NavBar v-if="$route.meta.showNavbarAndFooter !== false"  />
-  
-   <transition name="delayed-fade" appear>
-                    <router-view :key="$route.fullPath" />
+
+   <transition name="ultra-smooth" mode="out-in" >
+                    <router-view :key="$route.fullPath" class="transition-content" />
                 </transition>
 
 
@@ -30,14 +30,34 @@ export default {
 <style >
 @import "tailwindcss";
 
-.delayed-fade-enter-active {
-    transition: opacity 0.6s ease 0.3s;
+/* Transition optimisée pour le contenu uniquement */
+.ultra-smooth-enter-active {
+  transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) 0.1s;
+  will-change: transform, opacity;
+  position: absolute; /* Empêche le décalage des éléments fixes */
+  width: 100%;
 }
 
-.delayed-fade-enter-from {
-    opacity: 0;
+.ultra-smooth-leave-active {
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  will-change: transform, opacity;
+  position: absolute; /* Empêche le décalage des éléments fixes */
+  width: 100%;
 }
 
+.ultra-smooth-enter-from {
+  opacity: 0;
+  transform: translateY(12px) scale(0.98);
+}
+
+.ultra-smooth-leave-to {
+  opacity: 0;
+  transform: translateY(-12px) scale(1.02);
+}
+
+.transition-content {
+  width: 100%;
+}
 
 
 </style>
