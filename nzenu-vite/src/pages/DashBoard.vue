@@ -44,7 +44,7 @@
                                             </g>
                                         </svg><button>Recharge</button>
                                     </div>
-                                    <<router-link to="/profil"
+                                    <router-link to="/profil"
                                         class="px-2 space-x-2 flex py-2 items-center hover:bg-gray-200">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -92,7 +92,7 @@
                         </svg>
                     </div>
                     <div class="col">
-                        <router-link to="/dashboard" class="nav-link text-decoration-none">Dashboard</router-link>
+                        <router-link to="/dashbaord" class="nav-link text-decoration-none">Dashboard</router-link>
                     </div>
                 </div>
                 <div class="text-white flex space-x-2 p-5" :class="{ 'bg-sky-900': $route.path === '/contact' }">
