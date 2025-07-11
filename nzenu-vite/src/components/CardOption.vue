@@ -11,11 +11,13 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+
 defineProps({
   title: String,
   content: String,
-});
+}); 
+
 </script>
 
 <style scoped>

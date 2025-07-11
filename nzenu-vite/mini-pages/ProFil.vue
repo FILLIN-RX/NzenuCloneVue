@@ -22,7 +22,7 @@
           </div>
           <div class="mt-10 text-center">
             <p class=" font-bold">{{ prenom }} {{ nom }}</p>
-            <p class="underline">{{ email }}</p>
+            <p class="underline flex">{{ email }}</p>
             <p class=""><span>Client depuis le</span> 20/04/2025</p>
           </div>
         </div>
