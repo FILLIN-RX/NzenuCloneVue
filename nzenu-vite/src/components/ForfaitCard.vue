@@ -36,7 +36,7 @@
         </li>
       </ul>
       <div class="flex justify-center items-center p-2">
-        <button
+        <button @click="commander"
           class="bg-[#93F5F6] btn-commander text-[#1045A5] font-bold py-1 px-3 hover:bg-white hover:border-blue-900 border-white border"
           
         >
@@ -49,7 +49,8 @@
 
 <script setup>
 import { ref, computed } from "vue";
-
+import { useCartStore } from "../stores/panier";
+const cartStore = useCartStore();
 const props = defineProps({
   forfait: Object,
 });
@@ -61,7 +62,11 @@ const displayedAttributes = computed(() => {
     ? props.forfait.atribute
     : props.forfait.atribute.slice(0, 12);
 });
-
+function commander() {
+  cartStore.addItem(props.forfait)
+  alert(`✅ ${props.forfait.name} a été ajouté au panier !`)
+  console.log(cartStore.items)
+}
 function handleMouseLeave() {
   setTimeout(() => {
     if (

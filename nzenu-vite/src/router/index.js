@@ -2,6 +2,7 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
 import ProFil from '../../mini-pages/ProFil.vue'
+import ShoppingCart from '../pages/ShoppingCart.vue'
 import HomePage from '@/pages/HomePage.vue'
 import TransFerrer from '../pages/TransFerrer.vue'
 import MutuaLiser from '../pages/MutuaLiser.vue'
@@ -26,6 +27,7 @@ import RenouVellement from '../../mini-pages/RenouVellement.vue'
 import RegistraTion from '../pages/RegistraTion.vue'
 const routes = [
   { path: '/', component: HomePage },
+  { path: '/shopping-cart', component: ShoppingCart},
   { path: '/RechercheWhois', component: RechercheWhois },
   { path: '/enregistrer', component: EnregistrerPage },
   { path: '/transferrer', component: TransFerrer },

@@ -63,10 +63,12 @@
             </div>
             <div class="" v-show="!mobile">
               <div class="">
+                <router-link class="nav-link" to="/shopping-cart">
                 <img
                   src="../assets/b5faddc2-a770-4410-a6c1-7b2fd334e9f6.svg"
                   alt=""
                 />
+                </router-link>
               </div>
             </div>
           </div>

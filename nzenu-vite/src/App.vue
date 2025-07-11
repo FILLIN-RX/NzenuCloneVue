@@ -1,9 +1,9 @@
 <template>
    <NavBar v-if="$route.meta.showNavbarAndFooter !== false"  />
 
-   <transition name="ultra-smooth" mode="out-in" >
+  
                     <router-view :key="$route.fullPath" class="transition-content" />
-                </transition>
+               
 
 
   <WhatzappButton />
